@@ -13,7 +13,7 @@ function App() {
     return(
       <div>
         <MediaQuery maxDeviceWidth={767}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <NavigationBar responsive="phone"/>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -24,7 +24,7 @@ function App() {
         </Router>
         </MediaQuery>
         <MediaQuery minDeviceWidth={768}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <NavigationBar responsive="desktop"/>
           <Switch>
             <Route exact path="/" component={Home} />
