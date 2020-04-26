@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.7951e930.chunk.css",
-    "main.js": "/static/js/main.1ac3d479.chunk.js",
-    "main.js.map": "/static/js/main.1ac3d479.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.120dd051.js",
-    "runtime-main.js.map": "/static/js/runtime-main.120dd051.js.map",
-    "static/js/2.9e9718c9.chunk.js": "/static/js/2.9e9718c9.chunk.js",
-    "static/js/2.9e9718c9.chunk.js.map": "/static/js/2.9e9718c9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d469619462c7ec22480ee43859fa9468.js": "/precache-manifest.d469619462c7ec22480ee43859fa9468.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.7951e930.chunk.css.map": "/static/css/main.7951e930.chunk.css.map",
-    "static/js/2.9e9718c9.chunk.js.LICENSE.txt": "/static/js/2.9e9718c9.chunk.js.LICENSE.txt",
-    "static/media/contact_pic.jpg": "/static/media/contact_pic.214c6479.jpg",
-    "static/media/dekita_mock.png": "/static/media/dekita_mock.82bd01e5.png",
-    "static/media/mylogo.png": "/static/media/mylogo.c09ebc13.png"
+    "main.css": "/portfolio_react/static/css/main.7951e930.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.6422a0fc.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.6422a0fc.chunk.js.map",
+    "runtime-main.js": "/portfolio_react/static/js/runtime-main.7cb586b8.js",
+    "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.7cb586b8.js.map",
+    "static/js/2.605c09f7.chunk.js": "/portfolio_react/static/js/2.605c09f7.chunk.js",
+    "static/js/2.605c09f7.chunk.js.map": "/portfolio_react/static/js/2.605c09f7.chunk.js.map",
+    "index.html": "/portfolio_react/index.html",
+    "precache-manifest.37c043e0e2382ba737e55700e693d955.js": "/portfolio_react/precache-manifest.37c043e0e2382ba737e55700e693d955.js",
+    "service-worker.js": "/portfolio_react/service-worker.js",
+    "static/css/main.7951e930.chunk.css.map": "/portfolio_react/static/css/main.7951e930.chunk.css.map",
+    "static/js/2.605c09f7.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.605c09f7.chunk.js.LICENSE.txt",
+    "static/media/contact_pic.jpg": "/portfolio_react/static/media/contact_pic.214c6479.jpg",
+    "static/media/dekita_mock.png": "/portfolio_react/static/media/dekita_mock.82bd01e5.png",
+    "static/media/mylogo.png": "/portfolio_react/static/media/mylogo.c09ebc13.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.120dd051.js",
-    "static/js/2.9e9718c9.chunk.js",
+    "static/js/runtime-main.7cb586b8.js",
+    "static/js/2.605c09f7.chunk.js",
     "static/css/main.7951e930.chunk.css",
-    "static/js/main.1ac3d479.chunk.js"
+    "static/js/main.6422a0fc.chunk.js"
   ]
 }
