@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { HamburgerSpin } from 'react-animated-burgers';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
+import { animateScroll } from 'react-scroll';
 
 export const NavigationContainer = styled.div
 `
@@ -15,6 +16,22 @@ export const NavigationContainer = styled.div
 
 export const NewItem = styled(Link)
 `   
+    margin-right: 50px;
+    font-size: 0.6em;
+    cursor: pointer;
+    color: #262626;
+    text-decoration: none;
+    float: right;
+
+    &:hover {
+        transition: 0.3s;
+        text-decoration: none;
+        color: gray;
+    }
+`
+
+export const ContactButton = styled.div
+`
     margin-right: 50px;
     font-size: 0.6em;
     cursor: pointer;
@@ -79,6 +96,18 @@ export const PNewItem = styled(Link)
     }
 `
 
+export const PContactButton = styled.div
+`
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: gray;
+    }
+`
+
 export const ListContainer = styled.ul
 `   
     padding-top: 15px;
@@ -88,7 +117,7 @@ export const ListContainer = styled.ul
 
 export const PListContainer = styled.ul
 `  
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     left: -30px; /*謎*/
     list-style: none;
@@ -109,7 +138,7 @@ export const ListItem = styled.li
 
 export const PListItem = styled.li
 `
-    margin-top: 40px;
+    margin-top: 30px;
 `
 
 class NavigationBar extends React.Component {
@@ -133,6 +162,13 @@ class NavigationBar extends React.Component {
         }
     }
 
+    scrollToBottom(Interface){
+        if(Interface === "phone"){
+            this.onHamburgerButtonPress();    
+        }
+        animateScroll.scrollToBottom({duration: 2000, smooth: "easeInOutQuint"});
+    }
+
     render() {
         return(
         <div>
@@ -152,7 +188,9 @@ class NavigationBar extends React.Component {
                                 <PNewItem onClick={this.onHamburgerButtonPress} to={"/Works"}>Works</PNewItem>
                             </PListItem>
                             <PListItem>
-                                <PNewItem onClick={this.onHamburgerButtonPress} to={"/Contact"}>Contact</PNewItem>
+                                <PContactButton onClick={() => {this.scrollToBottom("phone")}}>
+                                    Contact
+                                </PContactButton>
                             </PListItem>
                             <PListItem>
                                 <div>
@@ -180,7 +218,9 @@ class NavigationBar extends React.Component {
                             <NewItem to={"/Works"}>Works</NewItem>
                         </ListItem>
                         <ListItem>
-                            <NewItem to={"/Contact"}>Contact</NewItem>
+                            <ContactButton onClick={this.scrollToBottom("desktop")}>
+                                Contact
+                            </ContactButton>
                         </ListItem>
                         <ListItem>
                             <a href="https://www.instagram.com/jun_0gin0/">
