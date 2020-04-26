@@ -1,0 +1,11 @@
+@import url("https://use.typekit.net/urt8xoe.css");
+
+html {
+  font-family: 'brandon-grotesque',sans-serif;
+  font-size: 30px;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}

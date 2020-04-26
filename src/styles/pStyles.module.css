@@ -1,0 +1,115 @@
+.Page {
+    background-color: #EFEFEF;
+    height: 100vh;
+    width: 100vw;
+}
+
+.innerPage{
+    position: relative;
+    height: 100%;
+}
+
+.Headline {
+    position: absolute;
+    font-weight: 700;
+    font-size: 2rem;
+    top: 57%;
+    left: 7%;
+}
+
+.Line {
+    position: absolute;
+    left: 8%;
+    top: 68%;
+    border-top: 2px solid #FFAB00;
+    width: 100px;
+}
+
+.Paragraph {
+    position: absolute;
+    float: left;
+    top: 70%;
+    left: 7%;
+    z-index: 1;
+    line-height: 0.5rem;
+    font-size: 15px;
+}
+
+.Image {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70vw;
+    z-index: 0;
+}
+
+.BtnShowMoreContainer {
+    position: absolute;
+    top: 85%;
+    left: 7%;
+}
+
+.btnShowMore {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height:30px;
+    text-align: center;
+    background-color: #FFAB00;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FFF;
+    text-decoration: none;
+    border: 2px solid #FFAB00;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btnShowMore:after{
+    width: 100%;
+    height: 0;
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background : #EFEFEF;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: .2s;
+    z-index: -1;
+}
+
+.btnShowMore:hover{
+    color: #FFAB00;
+}
+
+.btnShowMore:hover:after{
+    height: 240%;
+    opacity: 1;
+}
+
+.btnShowMore:active:after{
+    height: 340%;
+    opacity: 1;
+}
+
+.link {
+    color: #262626;
+}
+
+.link:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: gray;
+}
+
+.socialAccount{
+    color: #262626;
+    font-size: 80;
+    margin-right: 40px;
+}
+
+.socialAccount:hover {
+    text-decoration: none;
+    color: gray;
+}

@@ -1,0 +1,209 @@
+/* スマホレスポンシブデザイン用 */
+.Page {
+    background-color: #EFEFEF;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .innerPage{
+    position: relative;
+    height: 100%;
+  }
+  
+  .MyName {
+    /* remはhtml要素のfont-sizeの倍になる */
+    padding-top: 10%;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5rem;
+    margin-left: 7rem;
+  }
+  
+  .pMyName {
+    padding-top: 30%;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  
+  .Jun {
+    margin-left: 0.3rem;
+    margin-bottom: -3rem;
+  }
+  
+  .pJun {
+    margin-left: 0.3rem;
+    margin-bottom: -1.5rem;
+  }
+  
+  .F {
+    color: #FFAB00;
+  }
+  
+  .J {
+    color: #FFAB00;
+  }
+  
+  .Position {
+    margin-top: -1.5rem;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .pPosition {
+    margin-top: -1.5rem;
+    margin-left: 0.2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  
+  .leftHeadline {
+    position: absolute;
+    font-weight: 700;
+    font-size: 5rem;
+    top: 20%;
+    left: 12%;
+  }
+  
+  .rightHeadline {
+    position: absolute;
+    font-weight: 700;
+    font-size: 5rem;
+    top: 20%;
+    right: 12%;
+  }
+  
+  .leftLine {
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    border-top: 5px solid #FFAB00;
+    width: 300px;
+  }
+  
+  .rightLine {
+    position: absolute;
+    right: 12%;
+    top: 40%;
+    border-top: 5px solid #FFAB00;
+    width: 300px;
+  }
+  
+  .leftParagraph {
+    position: absolute;
+    float: left;
+    top: 45%;
+    left: 12%;
+    z-index: 1;
+  }
+  
+  .rightParagraph {
+    position: absolute;
+    float: left;
+    top: 45%;
+    right: 12%;
+    z-index: 1;
+  }
+  
+  .leftImage {
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    width: 40vw;
+    z-index: 0;
+  }
+  
+  .rightImage {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    width: 40vw;
+    z-index: 0;
+  }
+  
+  .leftBtnShowMoreContainer {
+    position: absolute;
+    top: 70%;
+    left: 12%;
+  }
+  
+  .rightBtnShowMoreContainer {
+    position: absolute;
+    top: 70%;
+    right: 23%;
+  }
+  
+  .btnShowMore {
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+    height:50px;
+    text-align: center;
+    background-color: #FFAB00;
+    font-size: 20px;
+    line-height: 52px;
+    color: #FFF;
+    text-decoration: none;
+    border: 2px solid #FFAB00;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btnShowMore:after{
+    width: 100%;
+    height: 0;
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background : #EFEFEF;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: .2s;
+    z-index: -1;
+  }
+  
+  .btnShowMore:hover{
+    color: #FFAB00;
+  }
+  
+  .btnShowMore:hover:after{
+    height: 240%;
+    opacity: 1;
+  }
+  
+  .btnShowMore:active:after{
+    height: 340%;
+    opacity: 1;
+  }
+  
+  .link {
+    color: #262626;
+  }
+  
+  .link:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: gray;
+  }
+  
+  .socialAccount{
+    color: #262626;
+    font-size: 80;
+    margin-right: 40px;
+  }
+  
+  .socialAccount:hover {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .ScrollDown {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 44%;
+    justify-content: center;
+    align-items: center;
+  }
