@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { HamburgerSpin } from 'react-animated-burgers';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
-import { animateScroll } from 'react-scroll';
+// import { animateScroll } from 'react-scroll';
 
 export const NavigationContainer = styled.div
 `
@@ -162,12 +162,12 @@ class NavigationBar extends React.Component {
         }
     }
 
-    scrollToBottom(Interface){
-        if(Interface === "phone"){
-            this.onHamburgerButtonPress();    
-        }
-        animateScroll.scrollToBottom({duration: 2000, smooth: "easeInOutQuint"});
-    }
+    // scrollToBottom(Interface){
+    //     if(Interface === "phone"){
+    //         this.onHamburgerButtonPress();    
+    //     }
+    //     animateScroll.scrollToBottom({duration: 2000, smooth: "easeInOutQuint"});
+    // }
 
     render() {
         return(
@@ -188,7 +188,8 @@ class NavigationBar extends React.Component {
                                 <PNewItem onClick={this.onHamburgerButtonPress} to={"/Works"}>Works</PNewItem>
                             </PListItem>
                             <PListItem>
-                                <PContactButton onClick={() => {this.scrollToBottom("phone")}}>
+                                {/* <PContactButton onClick={() => {this.scrollToBottom("phone")}}> */}
+                                <PContactButton>
                                     Contact
                                 </PContactButton>
                             </PListItem>
@@ -218,7 +219,8 @@ class NavigationBar extends React.Component {
                             <NewItem to={"/Works"}>Works</NewItem>
                         </ListItem>
                         <ListItem>
-                            <ContactButton onClick={this.scrollToBottom("desktop")}>
+                            {/* <ContactButton onClick={this.scrollToBottom("desktop")}> */}
+                            <ContactButton>
                                 Contact
                             </ContactButton>
                         </ListItem>
