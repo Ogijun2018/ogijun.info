@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.bea4cec4.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.d98238bb.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.d98238bb.chunk.js.map",
+    "main.css": "/portfolio_react/static/css/main.5da5cc54.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.23a6a543.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.23a6a543.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.7cb586b8.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.7cb586b8.js.map",
-    "static/js/2.11141250.chunk.js": "/portfolio_react/static/js/2.11141250.chunk.js",
-    "static/js/2.11141250.chunk.js.map": "/portfolio_react/static/js/2.11141250.chunk.js.map",
+    "static/js/2.8cf2382c.chunk.js": "/portfolio_react/static/js/2.8cf2382c.chunk.js",
+    "static/js/2.8cf2382c.chunk.js.map": "/portfolio_react/static/js/2.8cf2382c.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
-    "precache-manifest.ea20dbf44630a9a35a788a60c14b191c.js": "/portfolio_react/precache-manifest.ea20dbf44630a9a35a788a60c14b191c.js",
+    "precache-manifest.ede304c1d573f97969a389691e40e411.js": "/portfolio_react/precache-manifest.ede304c1d573f97969a389691e40e411.js",
     "service-worker.js": "/portfolio_react/service-worker.js",
-    "static/css/main.bea4cec4.chunk.css.map": "/portfolio_react/static/css/main.bea4cec4.chunk.css.map",
-    "static/js/2.11141250.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.11141250.chunk.js.LICENSE.txt",
+    "static/css/main.5da5cc54.chunk.css.map": "/portfolio_react/static/css/main.5da5cc54.chunk.css.map",
+    "static/js/2.8cf2382c.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.8cf2382c.chunk.js.LICENSE.txt",
     "static/media/about_pic.jpg": "/portfolio_react/static/media/about_pic.72dc02c7.jpg",
     "static/media/contact_pic.jpg": "/portfolio_react/static/media/contact_pic.214c6479.jpg",
     "static/media/dekita_mock.png": "/portfolio_react/static/media/dekita_mock.82bd01e5.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7cb586b8.js",
-    "static/js/2.11141250.chunk.js",
-    "static/css/main.bea4cec4.chunk.css",
-    "static/js/main.d98238bb.chunk.js"
+    "static/js/2.8cf2382c.chunk.js",
+    "static/css/main.5da5cc54.chunk.css",
+    "static/js/main.23a6a543.chunk.js"
   ]
 }
