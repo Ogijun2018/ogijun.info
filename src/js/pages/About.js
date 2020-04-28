@@ -1,12 +1,41 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import { IoIosRemove, IoLogoPython } from "react-icons/io";
-import { TiHtml5, TiCss3 } from "react-icons/ti";
-import { GrReactjs, GrWordpress } from "react-icons/gr";
-import { DiJqueryLogo, DiIllustrator, DiPhotoshop } from "react-icons/di";
+import { IoIosRemove} from "react-icons/io";
+import styled from "styled-components";
+import delighters from "../components/delighters";
+import { ReactComponent as HTML } from '../components/images/html.svg';
+import { ReactComponent as CSS } from '../components/images/css-3.svg';
+import { ReactComponent as Expo } from '../components/images/expo.svg';
+import { ReactComponent as Javascript } from '../components/images/javascript.svg';
+import { ReactComponent as REACT } from '../components/images/react.svg';
+import { ReactComponent as Redux } from '../components/images/redux.svg';
+import { ReactComponent as Python } from '../components/images/python.svg';
 
 import styles from '../../styles/styles.module.css';
-import MyPic from '../components/images/about_pic.jpg';
+import MyPic from '../components/images/about_mypic.jpg';
+
+export const PictureFuwatto = styled.div
+`
+width: "80%;
+position:"absolute";
+top: "35%";
+left: "10%";
+
+.delighter{
+  transition: all .3s ease-out;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.delighter.started {
+  transform: none;
+  opacity: 1;
+}
+
+.delighter.started.ended{
+  border: solid red 10px;
+}
+`
 
 export default class About extends React.Component {
   render() {
@@ -23,7 +52,7 @@ export default class About extends React.Component {
               <div style={{fontSize: 25, fontFamily: "heisei-kaku-gothic-std, sans-serif", fontWeight: 600, fontStyle: "normal", position: "absolute", top: "23%", left: "13%"}}>荻野 隼</div>
               <div style={{fontSize: 15, position: "absolute", top: "28%", left: "13%"}}>Jun Ogino</div>
             </div>
-            <div style={{width: "80%", position:"absolute", top: "35%", left: "10%"}}>
+            <div style={{width: "80%",position:"absolute",top: "35%",left: "10%"}}>
               <img src={MyPic} alt=""/>
             </div>
             <div>
@@ -36,27 +65,44 @@ export default class About extends React.Component {
         <div className={styles.Page}>
           <div className={styles.innerPage}>
             <IoIosRemove style={{position: "absolute", color: "#FFAB00", top: "15%", left: "5%"}}></IoIosRemove>
-            <div style={{position: "absolute", top: "14%", left: "12%", fontWeight: 300}}>Skills</div>
-            <div style={{position: "absolute", top: "20%", left: "10%"}}>
-              <div style={{position: "absolute", fontSize: "0.9rem" }}>Front-end</div>
-              <div style={{marginTop: "30%"}}>
-                <TiHtml5></TiHtml5>
-                <TiCss3></TiCss3>
-                <DiJqueryLogo></DiJqueryLogo>
-                <GrReactjs></GrReactjs>
-                <GrWordpress></GrWordpress>
+            <div style={{position: "absolute", top: "14%", left: "12%", fontWeight: 300}}>Skill set</div>
+              <div style={{position: "absolute", top: "22%", left: "10%"}}>
+                <HTML style={{position:"relative", width: 40, zIndex: 1, marginRight: -10}}></HTML>
+                <CSS style={{position:"relative", width:40}}></CSS>
+                <div style={{fontSize: "0.5rem", }}>
+                  HTML&CSS
+                </div>
               </div>
-            </div>
-            <div>
-              <div style={{position: "absolute", fontSize: "0.9rem", top: "60%", left: "10%"}}>Design, others</div>
-            </div>
-            <div style={{position: "absolute", top: "63%", left: "10%"}}>
-            <div style={{marginTop: "30%"}}>
-              <IoLogoPython></IoLogoPython>
-              <DiIllustrator></DiIllustrator>
-              <DiPhotoshop></DiPhotoshop>
+              <div style={{position: "absolute", top: "35%", left: "15%"}}>
+                <Javascript style={{position:"relative", width: 40, zIndex: 1}}></Javascript>
+                <div style={{fontSize: "0.5rem"}}>
+                  Javascript
+                </div>
               </div>
-            </div>
+              <div style={{position: "absolute", top: "47%", left: "7%"}}>
+                <REACT style={{position:"relative", width: 40, marginLeft: 30,}}></REACT>
+                <div style={{fontSize: "0.5rem"}}>
+                  React, React Native
+                </div>
+              </div>
+              <div style={{position: "absolute", top: "58%", left: "15%"}}>
+                <Redux style={{position:"relative", width: 40, zIndex: 1}}></Redux>
+                <div style={{fontSize: "0.5rem"}}>
+                  Redux
+                </div>
+              </div>
+              <div style={{position: "absolute", top: "70%", left: "15%"}}>
+                <Expo style={{position:"relative", width: 40, zIndex: 1}}></Expo>
+                <div style={{fontSize: "0.5rem"}}>
+                  Expo
+                </div>
+              </div>
+              <div style={{position: "absolute", top: "83%", left: "15%"}}>
+                <Python style={{position:"relative", width: 40, zIndex: 1}}></Python>
+                <div style={{fontSize: "0.5rem"}}>
+                  python
+                </div>
+              </div>
           </div>
         </div>
         </MediaQuery>

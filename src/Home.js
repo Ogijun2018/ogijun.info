@@ -4,9 +4,9 @@ import PhonePage from "./js/components/PhonePage";
 import styles from "./styles/styles.module.css";
 import MediaQuery from "react-responsive";
 import { FiChevronDown } from 'react-icons/fi';
-import mylogo from './js/components/images/mylogo.png';
-import dekitaMock from './js/components/images/dekita_mock.png';
-import contactPic from './js/components/images/contact_pic.jpg';
+import aboutPic from './js/components/images/about.png';
+import worksPic from './js/components/images/works.png';
+import contactPic from './js/components/images/contact.jpg';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
 import anime from 'animejs';
 
@@ -83,21 +83,6 @@ export default class Home extends React.Component {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">
         <div className={styles.Page}>
-          <div className={styles.pMyName}>
-            <div>
-              <div>
-                <p className={styles.pJun}><span className={styles.J}>J</span>UN</p>
-              </div>
-              <div>
-                <p className={styles.pOgino}>OGINO</p>
-              </div>
-            </div>
-            <div className={styles.pPosition}>
-              <div>
-                <p><span className={styles.F}>F</span>ront-end Developer</p>
-              </div>
-            </div>
-          </div>
           <div style={{position: "absolute", top: "15%" ,left: "15%", width:"70%"}}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2644 690.5" style={{fill: 'none', stroke: '#FFAB00', strokeWidth: 5}}>
                 <defs>
@@ -179,6 +164,41 @@ export default class Home extends React.Component {
                 <circle class="cls-3" cx="2503" cy="340" r="141"/>
                 </g></svg>
               </div>
+              <div className={styles.pMyName}>
+                <div>
+                  <div>
+                    <p ref = { ref => {
+                      tl.add({
+                        delay: 1000,
+                        targets: ref,
+                        translateX: [-20, 0],
+                        opacity: [0,1],
+                      })
+                    }} className={styles.pJun}>
+                      <span className={styles.J}>J</span>UN
+                    </p>
+                  </div>
+                  <div>
+                    <p ref = { ref => {
+                      tl.add({
+                        targets: ref,
+                        translateX: [-20, 0],
+                        opacity: [0,1],
+                      }, "-=1200")
+                    }} className={styles.Ogino}>OGINO</p>
+                  </div>
+                </div>
+                <div className={styles.pPosition}>
+                  <div ref = { ref => {
+                      tl.add({
+                        targets: ref,
+                        opacity: [0,1],
+                      }, "-=1000")
+                    }} >
+                    <p><span className={styles.F}>F</span>ront-end Developer</p>
+                  </div>
+                </div>
+              </div>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -189,14 +209,14 @@ export default class Home extends React.Component {
                   })
                 }} className={styles.ScrollDown} style={{left: "33%", fontSize: "0.8rem"}}><FiChevronDown/>scroll down</div>
         </div>
-        <PhonePage pageName={"About"} imgName={mylogo} showMoreBtn={true} text={
+        <PhonePage pageName={"About"} imgName={aboutPic} showMoreBtn={true} text={
           <div>
             <p>Welcome to my portfolio!</p>
             <p>I'm always looking to create good design, good products.</p>
             <p>I still have a lot to learn, but I'm working hard every day.</p>
           </div>
         }></PhonePage>
-        <PhonePage pageName={"Works"} imgName={dekitaMock} showMoreBtn={true} text={
+        <PhonePage pageName={"Works"} imgName={worksPic} showMoreBtn={true} text={
           <div>
             <p>Apps, design, research, and more...</p>
           </div>
@@ -346,14 +366,14 @@ export default class Home extends React.Component {
                   })
                 }} className={styles.ScrollDown}><FiChevronDown/>scroll down</div>
         </div>
-        <DesktopPage layout={"left"} pageName={"About"} imgName={mylogo} showMoreBtn={true} text={
+        <DesktopPage layout={"left"} pageName={"About"} imgName={aboutPic} showMoreBtn={true} text={
           <div>
             <p>Welcome to my portfolio!</p>
             <p>I'm always looking to create good design, good products.</p>
             <p>I still have a lot to learn, but I'm working hard every day.</p>
           </div>
           }></DesktopPage>
-        <DesktopPage layout={"right"} pageName={"Works"} imgName={dekitaMock} showMoreBtn={true} text={
+        <DesktopPage layout={"right"} pageName={"Works"} imgName={worksPic} showMoreBtn={true} text={
           <div>
             <p>Apps, design, research, and more...</p>
           </div>

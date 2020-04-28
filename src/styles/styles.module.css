@@ -20,11 +20,11 @@
   }
   
   .pMyName {
-    padding-top: 14rem;
+    padding-top: 60vh;
     font-weight: 900;
     font-style: normal;
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
   
   .Jun {
@@ -46,9 +46,9 @@
   
   .Position {
     margin-top: -1.5rem;
-    margin-left: 2rem;
-    font-weight: 700;
-    font-size: 1.0rem;
+    margin-left: 0.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
   }
   
   .pPosition {

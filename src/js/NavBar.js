@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { HamburgerSpin } from 'react-animated-burgers';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
-// import { animateScroll } from 'react-scroll';
+import { animateScroll } from 'react-scroll';
 
 export const NavigationContainer = styled.div
 `
@@ -162,12 +162,19 @@ class NavigationBar extends React.Component {
         }
     }
 
-    // scrollToBottom(Interface){
-    //     if(Interface === "phone"){
-    //         this.onHamburgerButtonPress();    
-    //     }
-    //     animateScroll.scrollToBottom({duration: 2000, smooth: "easeInOutQuint"});
-    // }
+    scrollToTop(Interface){
+        if(Interface === "phone"){
+            this.onHamburgerButtonPress();
+        }
+        animateScroll.scrollToTop({duration: 2000, smooth: "easeInOutQuint"});
+    }
+
+    scrollToBottom(Interface){
+        if(Interface === "phone"){
+            this.onHamburgerButtonPress();    
+        }
+        animateScroll.scrollToBottom({duration: 2000, smooth: "easeInOutQuint"});
+    }
 
     render() {
         return(
@@ -175,11 +182,11 @@ class NavigationBar extends React.Component {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
             {this.props.responsive === "phone" &&
                 <div>
-                    <PNewItem to={"/"} style={{color: "gray", position: "fixed", fontSize: 20, left: "0.8rem", top: "0.8rem", zIndex: 9999}}>Jun Ogino</PNewItem>
+                    <PNewItem onClick={() => {this.scrollToTop()}} to={"/"} style={{color: "gray", position: "fixed", fontSize: 20, left: "0.8rem", top: "0.8rem", zIndex: 9999}}>Jun Ogino</PNewItem>
                     <HamburgerSpin buttonHeight={20} buttonWidth={20} buttonStyle={{position: 'fixed', right: '0.8rem', top: '0.15rem', zIndex: 9999}} isActive={this.state.hamburgerPress} toggleButton={this.onHamburgerButtonPress} barColor="gray" />
                         <PListContainer className="animated fadeIn" style={{display: this.state.hamburgerPress ? "block" : "none"}}>
                             <PListItem>
-                                <PNewItem onClick={this.onHamburgerButtonPress} to={"/"}>Home</PNewItem>
+                                <PNewItem onClick={() => {this.scrollToTop("phone")}} to={"/"}>Home</PNewItem>
                             </PListItem>
                             <PListItem>
                                 <PNewItem onClick={this.onHamburgerButtonPress} to={"/About"}>About</PNewItem>
@@ -188,8 +195,7 @@ class NavigationBar extends React.Component {
                                 <PNewItem onClick={this.onHamburgerButtonPress} to={"/Works"}>Works</PNewItem>
                             </PListItem>
                             <PListItem>
-                                {/* <PContactButton onClick={() => {this.scrollToBottom("phone")}}> */}
-                                <PContactButton>
+                                <PContactButton onClick={() => {this.scrollToBottom("phone")}}>
                                     Contact
                                 </PContactButton>
                             </PListItem>
@@ -218,9 +224,8 @@ class NavigationBar extends React.Component {
                         <ListItem>
                             <NewItem to={"/Works"}>Works</NewItem>
                         </ListItem>
-                        <ListItem>
-                            {/* <ContactButton onClick={this.scrollToBottom("desktop")}> */}
-                            <ContactButton>
+                        <ListItem >
+                            <ContactButton onClick={() => {this.scrollToBottom("desktop")}}>
                                 Contact
                             </ContactButton>
                         </ListItem>
