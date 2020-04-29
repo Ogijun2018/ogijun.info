@@ -11,6 +11,7 @@
     "animate.css": "^3.7.2",
     "animejs": "^3.2.0",
     "classnames": "^2.2.6",
+    "progressbar.js": "^1.1.0",
     "react-animated-burgers": "^1.2.7",
     "react-icons": "^3.10.0",
     "react-pose": "^4.0.10",

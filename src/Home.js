@@ -199,15 +199,6 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    translateY: [0,-10],
-                    easing: 'easeInOutQuad',
-                    direction: 'alternate',
-                    loop: true
-                  })
-                }} className={styles.ScrollDown} style={{left: "33%", fontSize: "0.8rem"}}><FiChevronDown/>scroll down</div>
         </div>
         <PhonePage pageName={"About"} imgName={aboutPic} showMoreBtn={true} text={
           <div>
