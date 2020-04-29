@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.e3565613.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.be931b5d.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.be931b5d.chunk.js.map",
+    "main.css": "/portfolio_react/static/css/main.cc39b4bd.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.3934fe94.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.3934fe94.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.7cb586b8.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.7cb586b8.js.map",
-    "static/js/2.5d8a194a.chunk.js": "/portfolio_react/static/js/2.5d8a194a.chunk.js",
-    "static/js/2.5d8a194a.chunk.js.map": "/portfolio_react/static/js/2.5d8a194a.chunk.js.map",
+    "static/js/2.35b38e5e.chunk.js": "/portfolio_react/static/js/2.35b38e5e.chunk.js",
+    "static/js/2.35b38e5e.chunk.js.map": "/portfolio_react/static/js/2.35b38e5e.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
-    "precache-manifest.c3a9bddb4ff098bc42639376691b6c30.js": "/portfolio_react/precache-manifest.c3a9bddb4ff098bc42639376691b6c30.js",
+    "precache-manifest.c3ccbfdfb87a1de17d31144cf1027312.js": "/portfolio_react/precache-manifest.c3ccbfdfb87a1de17d31144cf1027312.js",
     "service-worker.js": "/portfolio_react/service-worker.js",
-    "static/css/main.e3565613.chunk.css.map": "/portfolio_react/static/css/main.e3565613.chunk.css.map",
-    "static/js/2.5d8a194a.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.5d8a194a.chunk.js.LICENSE.txt",
+    "static/css/main.cc39b4bd.chunk.css.map": "/portfolio_react/static/css/main.cc39b4bd.chunk.css.map",
+    "static/js/2.35b38e5e.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.35b38e5e.chunk.js.LICENSE.txt",
     "static/media/about.png": "/portfolio_react/static/media/about.50759401.png",
     "static/media/about_mypic.jpg": "/portfolio_react/static/media/about_mypic.72dc02c7.jpg",
     "static/media/contact.jpg": "/portfolio_react/static/media/contact.44f1c0fd.jpg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7cb586b8.js",
-    "static/js/2.5d8a194a.chunk.js",
-    "static/css/main.e3565613.chunk.css",
-    "static/js/main.be931b5d.chunk.js"
+    "static/js/2.35b38e5e.chunk.js",
+    "static/css/main.cc39b4bd.chunk.css",
+    "static/js/main.3934fe94.chunk.js"
   ]
 }
