@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio_react/static/css/main.cc39b4bd.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.3fbe9fff.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.3fbe9fff.chunk.js.map",
+    "main.js": "/portfolio_react/static/js/main.82406efd.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.82406efd.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.7cb586b8.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.7cb586b8.js.map",
-    "static/js/2.843ae432.chunk.js": "/portfolio_react/static/js/2.843ae432.chunk.js",
-    "static/js/2.843ae432.chunk.js.map": "/portfolio_react/static/js/2.843ae432.chunk.js.map",
+    "static/js/2.d1560d7d.chunk.js": "/portfolio_react/static/js/2.d1560d7d.chunk.js",
+    "static/js/2.d1560d7d.chunk.js.map": "/portfolio_react/static/js/2.d1560d7d.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
-    "precache-manifest.9b09d9ecb05e8c8fc22624de953a608a.js": "/portfolio_react/precache-manifest.9b09d9ecb05e8c8fc22624de953a608a.js",
+    "precache-manifest.f28c51646f8ff363dc3c44c36ea77715.js": "/portfolio_react/precache-manifest.f28c51646f8ff363dc3c44c36ea77715.js",
     "service-worker.js": "/portfolio_react/service-worker.js",
     "static/css/main.cc39b4bd.chunk.css.map": "/portfolio_react/static/css/main.cc39b4bd.chunk.css.map",
-    "static/js/2.843ae432.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.843ae432.chunk.js.LICENSE.txt",
+    "static/js/2.d1560d7d.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.d1560d7d.chunk.js.LICENSE.txt",
     "static/media/about.png": "/portfolio_react/static/media/about.50759401.png",
     "static/media/about_mypic.jpg": "/portfolio_react/static/media/about_mypic.72dc02c7.jpg",
     "static/media/contact.jpg": "/portfolio_react/static/media/contact.44f1c0fd.jpg",
     "static/media/css-3.d3ad67fa.svg": "/portfolio_react/static/media/css-3.d3ad67fa.svg",
+    "static/media/dekita_1.png": "/portfolio_react/static/media/dekita_1.3aa75873.png",
     "static/media/expo.f44d7031.svg": "/portfolio_react/static/media/expo.f44d7031.svg",
     "static/media/html.24845c5c.svg": "/portfolio_react/static/media/html.24845c5c.svg",
     "static/media/javascript.87711407.svg": "/portfolio_react/static/media/javascript.87711407.svg",
@@ -26,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7cb586b8.js",
-    "static/js/2.843ae432.chunk.js",
+    "static/js/2.d1560d7d.chunk.js",
     "static/css/main.cc39b4bd.chunk.css",
-    "static/js/main.3fbe9fff.chunk.js"
+    "static/js/main.82406efd.chunk.js"
   ]
 }
