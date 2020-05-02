@@ -1,0 +1,153 @@
+.Page{
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.worksWrapper {
+    padding: 115px 15px;
+}
+
+.pWorksWrapper {
+    padding-top: 65px;
+}
+
+.panel {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pPanel {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.worksList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pWorksList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.worksItem {
+    width: 25%;
+    box-sizing: border-box;
+    height: 270px;
+    margin: 0 20px 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1));
+    transition: .5s;
+}
+
+.pWorksItem {
+    width: 90%;
+    box-sizing: border-box;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1));
+    transition: .5s;
+}
+
+.worksItem:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+    transition: .5s;
+}
+
+ul {
+    list-style: none;
+}
+
+.figure {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+}
+
+.pFigure {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    transition: opacity .3s;
+    width: 100%;
+    pointer-events: none;
+}
+
+.textarea{
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.name {
+    position: absolute;
+    bottom: -17px;
+    left: 20px;
+    color: #262626;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+.pName {
+    position: absolute;
+    bottom: -17px;
+    left: 20px;
+    color: #262626;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+.date {
+    position: absolute;
+    color: #262626;
+    font-size: 1vw;
+    bottom: 8px;
+    right: 18px;
+}
+
+.pDate{
+    position: absolute;
+    color: #262626;
+    font-size: 3.5vw;
+    bottom: 8px;
+    right: 18px;
+}
