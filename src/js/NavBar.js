@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "../styles/navbar.module.css";
 import { HamburgerSpin } from 'react-animated-burgers';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io'; 
 import { animateScroll } from 'react-scroll';
 
 class NavigationBar extends React.Component {
@@ -95,9 +96,14 @@ class NavigationBar extends React.Component {
                                 <Link className={styles.newItem} to={"/Works"}>Works</Link>
                             </li>
                             <li className={styles.listItem}>
-                                <div className={styles.contactButton} onClick={() => {this.scrollToBottom("desktop")}}>
-                                    Contact
-                                </div>
+                                <a className={styles.newItem} href="https://www.wantedly.com/users/87254893">
+                                    Wantedly
+                                </a>
+                            </li>
+                            <li className={styles.listItem}>
+                                <a href="mailto:ogijun.mk@hotmail.co.jp">
+                                    <IoIosMail className={styles.SNSButton}></IoIosMail>
+                                </a>
                             </li>
                             <li className={styles.listItem}>
                                 <a href="https://www.instagram.com/jun_0gin0/">
