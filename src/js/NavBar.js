@@ -112,19 +112,19 @@ export const ListContainer = styled.ul
 `   
     padding-top: 15px;
     list-style: none;
-    float: right;
 `
 
 export const PListContainer = styled.ul
 `  
     z-index: 10;
     position: fixed;
-    left: -30px; /*謎*/
     list-style: none;
     width: 100%;
-    height: 100vh;
-    margin-top: -40px;
+    height: 120%;
+    margin-left: 0px;
+    margin-top: -20px;
     padding-top: 100px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: rgba(0,0,0,0.8);
 `

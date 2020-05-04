@@ -1,6 +1,7 @@
 import React from "react";
 import MediaQuery from "react-responsive";
 import { IoIosRemove } from "react-icons/io";
+import { animateScroll } from 'react-scroll';
 
 import Modal from "../components/Modal";
 import PModal from "../components/PModal";
@@ -12,7 +13,16 @@ import stopwatch_header from '../components/images/stopwatch_header.png';
 import mylogo_header from '../components/images/mylogo_header.png';
 import UECTFlogo_header from '../components/images/UECTFlogo_header.png';
 import graduate_thesis_header from '../components/images/graduate_thesis_header.png';
-import dekita_pic from '../components/images/dekita_modal.png';
+import dekita_modal1 from '../components/images/dekita_modal1.png';
+import portfolio_modal2 from '../components/images/portfolio_modal2.jpg';
+import portfolio_modal3 from '../components/images/portfolio_modal3.jpg';
+import stopwatch_modal2 from '../components/images/stopwatch_modal2.jpg';
+import mylogo_modal1 from '../components/images/mylogo_modal1.png';
+import UECTFlogo_modal1 from '../components/images/UECTFlogo_modal1.png';
+import UECTFlogo_modal2 from '../components/images/UECTFlogo_modal2.png';
+import graduate_thesis_modal1 from '../components/images/graduate_thesis_modal1.png';
+import graduate_thesis_modal2 from '../components/images/graduate_thesis_modal2.png';
+
 
 export default class Works extends React.Component {
   state = {
@@ -21,6 +31,7 @@ export default class Works extends React.Component {
     modalDescription: "",
     modalSkill: "",
     modalDemoURL: "",
+    modalPic: "",
   };
 
   openModal(title, description, skill, demoURL, pic){
@@ -30,7 +41,9 @@ export default class Works extends React.Component {
       modalDescription: description, 
       modalSkill: skill, 
       modalDemoURL: demoURL,
+      modalPic: pic,
     });
+    document.body.setAttribute('style', 'overflow: hidden;');
   }
 
   closeModal(){
@@ -40,24 +53,32 @@ export default class Works extends React.Component {
       modalDescription: "",
       modalSkill: "",
       modalDemoURL: "",
+      modalPic: "",
     });
+    document.body.removeAttribute('style', 'overflow: hidden;');
   }
 
   render() {
     const DekitaDescription = "インターンシップを始めて一番最初に作成したアプリケーションです。子供がお手伝いをしたときにこのDEKITA!スタンプを貯めていくことで、子供のお手伝いのモチベーションとなるようなアプリです。React NativeやJavaScriptの基礎を学びながら実際にアプリケーションをリリースできたことは、とてもよい経験になりました。このアプリ作成の経験を基に、現在はさらに複雑な構造のアプリ開発をしています。";
     const DekitaSkill = "React Native, Expo, Xcode, Android Studio, Git";
     const DekitaDemoURL = "https://apps.apple.com/jp/app/dekita-%E3%81%A7%E3%81%8D%E3%81%9F/id1462854067";
+    const DekitaPic = [dekita_header, dekita_modal1];
     const PortfolioDescription = "このWebページです。React, anime.js, CSSを使用し、ランディングページ+2ページの計3ページを作成しました。トップのロゴのアニメーションはsvgとanime.jsを組み合わせたもので、自分的にも可愛いアニメーションができたと思っています。そのほかにも画面遷移のアニメーションやナビゲーションバーなど、細部にもこだわれるだけこだわりました。まだまだやりたいことがたくさんあるので、これからも更新していこうと思っています。";
     const PortfolioSkill = "React.js, anime.js, CSS, Git, Illustrator, Webpack";
+    const PortfolioPic = [portfolio_header, portfolio_modal2, portfolio_modal3];
     const StopWatchDescription = "所属している陸上競技部にて、マネージャーさんがたくさんのストップウォッチを使い分けるのが難しいという問題を解決するために作ってみたストップウォッチのアプリです。陸上競技に特化した機能として、400mでラップをとることで選択した距離の推定記録を計算して表示します。音量ボタンでスタート/ストップを制御できるとより使いやすいと意見があったので、Swiftを使って一から作り直そうと考えています。";
     const StopWatchSkill = "React Native, Expo, Xcode, moment.js";
+    const StopWatchPic = [stopwatch_header, stopwatch_modal2];
     const MyLogoDescription = "自分のロゴが欲しい！というかねてからの思いを、ついに実現しました。デザインの勉強はまだまだ不足していますが、満足できるデザインになったと思っています。トップ画面のアニメーションはこのロゴのsvgをanime.jsを使って動かしています。";
     const MyLogoSkill = "Illustrator";
+    const MyLogoPic = [mylogo_modal1, portfolio_header];
     const UECTFLogoDescription = "所属している電気通信大学陸上競技部、通称UECTFのロゴです。電気通信大学のロゴを踏襲しながらもオリジナルさのある背景にし、一目で電通大とわかるようなロゴにしました。現在は部活のTwitterアイコンやSlackのワークスペースアイコンで使われています。こだわった点として、後ろのグラデーションと球体は黄金比を用いたデザインにしました。";
     const UECTFSkill = "Illustrator";
     const UECTFDemoURL = "https://twitter.com/uectf";
+    const UECTFPic = [UECTFlogo_modal1, UECTFlogo_modal2];
     const GraduateThesisDescription = "2020年2月に発表した学部生時代の卒業論文です。集中力が低下する時、生体情報が変化することを利用し、休憩時に運動をすることで生体情報の変化を読み取り、運動をした方が集中力があがるという仮定を基に実験をしました。結果は有意ではなかったものの実際に課題の成績の向上がみられました。データ解析にpythonをしようしたり、生体情報を取得するためにiPhoneにアプリを作成したりしました。";
     const GraduateThesisSkill = "Python, Swift, latex";
+    const GraduateThesisPic = [graduate_thesis_modal1, graduate_thesis_modal2];
 
     return (
       <div>
@@ -72,7 +93,7 @@ export default class Works extends React.Component {
               </div>
               <div className={styles.pPanel}>
                 <ul className={styles.pWorksList}>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL, DekitaPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={dekita_header} alt=""/>
                     </figure>
@@ -81,7 +102,7 @@ export default class Works extends React.Component {
                       <div className={styles.pDate}>May 16, 2019</div>
                     </div>
                   </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Portfolio", PortfolioDescription, PortfolioSkill)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Portfolio", PortfolioDescription, PortfolioSkill, "", PortfolioPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={portfolio_header} alt=""/>
                     </figure>
@@ -90,7 +111,7 @@ export default class Works extends React.Component {
                       <div className={styles.pDate}>May 6, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("UECTF StopWatch", StopWatchDescription, StopWatchSkill)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("UECTF StopWatch", StopWatchDescription, StopWatchSkill, "", StopWatchPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={stopwatch_header} alt=""/>
                     </figure>
@@ -99,7 +120,7 @@ export default class Works extends React.Component {
                       <div className={styles.pDate}>May 21, 2019</div>
                     </div>
                   </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill, "", MyLogoPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={mylogo_header} alt=""/>
                     </figure>
@@ -108,7 +129,7 @@ export default class Works extends React.Component {
                       <div className={styles.pDate}>Mar 29, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL, UECTFPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={UECTFlogo_header} alt=""/>
                     </figure>
@@ -117,7 +138,7 @@ export default class Works extends React.Component {
                       <div className={styles.pDate}>Mar 29, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill)}}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill, "", GraduateThesisPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={graduate_thesis_header} alt=""/>
                     </figure>
@@ -141,7 +162,7 @@ export default class Works extends React.Component {
               </div>
               <div className={styles.panel}>
                 <ul className={styles.worksList}>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL, DekitaPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={dekita_header} alt=""/>
                     </figure>
@@ -150,7 +171,7 @@ export default class Works extends React.Component {
                       <div className={styles.date}>May 16, 2019</div>
                     </div>
                   </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("Portfolio", PortfolioDescription, PortfolioSkill)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("Portfolio", PortfolioDescription, PortfolioSkill, "", PortfolioPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={portfolio_header} alt=""/>
                     </figure>
@@ -159,7 +180,7 @@ export default class Works extends React.Component {
                       <div className={styles.date}>May 6, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("UECTF StopWatch", StopWatchDescription, StopWatchSkill)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("UECTF StopWatch", StopWatchDescription, StopWatchSkill, "", StopWatchPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={stopwatch_header} alt=""/>
                     </figure>
@@ -168,7 +189,7 @@ export default class Works extends React.Component {
                       <div className={styles.date}>May 21, 2019</div>
                     </div>
                   </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill, "", MyLogoPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={mylogo_header} alt=""/>
                     </figure>
@@ -177,7 +198,7 @@ export default class Works extends React.Component {
                       <div className={styles.date}>Mar 29, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL, UECTFPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={UECTFlogo_header} alt=""/>
                     </figure>
@@ -186,7 +207,7 @@ export default class Works extends React.Component {
                       <div className={styles.date}>Mar 29, 2020</div>
                     </div>
                   </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill, "", GraduateThesisPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={graduate_thesis_header} alt=""/>
                     </figure>
@@ -197,7 +218,7 @@ export default class Works extends React.Component {
                   </div>
                 </ul>
               </div>
-              {this.state.modalVisible ? <Modal title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic} visible={this.state.modalVisible} onPressClose={() => {this.closeModal()}}></Modal> : null}
+              {this.state.modalVisible ? <Modal visible={this.state.modalVisible} className="animated fadeIn" title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic}  onPressClose={() => {this.closeModal()}}></Modal> :null}
             </div>
           </div>
       </MediaQuery>

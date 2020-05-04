@@ -1,15 +1,19 @@
 import React from "react";
 import styles from "../../styles/modalStyle.module.css";
-import { Link } from "react-router-dom";
 import { IoIosRemove } from "react-icons/io";
-import dekita_pic from "../components/images/dekita_modal.png";
+import { GrClose } from "react-icons/gr";
 
 export default class Page extends React.Component {
     render() {
       return(
+        <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
+        <div className={styles.pCloseButton} onClick={this.props.onPressClose}>
+          <GrClose></GrClose>
+        </div>
         <div className={styles.pModalOutSide}>
-          <div onClick={this.props.onPressClose} className={styles.pModalContainer}>
-            <div className={styles.pRight}>
+          <div className={styles.pModalContainer}>
+            <div className={styles.scroll}>
               <div className={styles.pTitle}>{this.props.title}</div>
               <hr className={styles.pBar} color="black"></hr>
               <div className={styles.pSubtitle}>
@@ -30,8 +34,22 @@ export default class Page extends React.Component {
               <div className={styles.pSentence}>
                 <a style={{color: "#262626"}} href={this.props.demoURL}>{this.props.demoURL}</a>
               </div>
+              <div className={styles.pSubtitle}>
+                <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Picture
+              </div>
+              <div className={styles.pic}>
+                <div className={styles.pCp_cssslider}>
+                  <input type="radio" name="cp_switch" id="photo1" defaultChecked={true}/>
+                  <label htmlFor="photo1"><img src={this.props.pic[0]} alt=""/></label>
+                  <img src={this.props.pic[0]} alt=""/>
+                  <input type="radio" name="cp_switch" id="photo2"/>
+                  <label htmlFor="photo2"><img src={this.props.pic[1]} alt=""/></label>
+                  <img src={this.props.pic[1]} alt=""/>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
         </div>
       );
     }
