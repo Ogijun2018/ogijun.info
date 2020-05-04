@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.e908eef8.chunk.css",
+    "main.css": "/portfolio_react/static/css/main.52e42944.chunk.css",
     "main.js": "/portfolio_react/static/js/main.54fd5bd3.chunk.js",
     "main.js.map": "/portfolio_react/static/js/main.54fd5bd3.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.7cb586b8.js",
@@ -8,9 +8,9 @@
     "static/js/2.a330a97b.chunk.js": "/portfolio_react/static/js/2.a330a97b.chunk.js",
     "static/js/2.a330a97b.chunk.js.map": "/portfolio_react/static/js/2.a330a97b.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
-    "precache-manifest.693663381dff8edc4725d0ae527689f2.js": "/portfolio_react/precache-manifest.693663381dff8edc4725d0ae527689f2.js",
+    "precache-manifest.2a0cd73fd8dd23c10652176670363f52.js": "/portfolio_react/precache-manifest.2a0cd73fd8dd23c10652176670363f52.js",
     "service-worker.js": "/portfolio_react/service-worker.js",
-    "static/css/main.e908eef8.chunk.css.map": "/portfolio_react/static/css/main.e908eef8.chunk.css.map",
+    "static/css/main.52e42944.chunk.css.map": "/portfolio_react/static/css/main.52e42944.chunk.css.map",
     "static/js/2.a330a97b.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.a330a97b.chunk.js.LICENSE.txt",
     "static/media/UECTFlogo_header.png": "/portfolio_react/static/media/UECTFlogo_header.4a8be480.png",
     "static/media/UECTFlogo_modal1.png": "/portfolio_react/static/media/UECTFlogo_modal1.2a10a799.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.7cb586b8.js",
     "static/js/2.a330a97b.chunk.js",
-    "static/css/main.e908eef8.chunk.css",
+    "static/css/main.52e42944.chunk.css",
     "static/js/main.54fd5bd3.chunk.js"
   ]
 }
