@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/modalStyle.module.css";
+import styles from "../../styles/modal.module.css";
 import { IoIosRemove } from "react-icons/io";
 import { GrClose } from "react-icons/gr";
 
@@ -16,6 +16,16 @@ export default class Page extends React.Component {
             <div className={styles.scroll}>
               <div className={styles.pTitle}>{this.props.title}</div>
               <hr className={styles.pBar} color="black"></hr>
+              <div className={styles.pic}>
+                <div className={styles.pCp_cssslider}>
+                  <input type="radio" name="cp_switch" id="photo1" defaultChecked={true}/>
+                  <label htmlFor="photo1"><img src={this.props.pic[0]} alt=""/></label>
+                  <img src={this.props.pic[0]} alt=""/>
+                  <input type="radio" name="cp_switch" id="photo2"/>
+                  <label htmlFor="photo2"><img src={this.props.pic[1]} alt=""/></label>
+                  <img src={this.props.pic[1]} alt=""/>
+                </div>
+              </div>
               <div className={styles.pSubtitle}>
                 <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Description
               </div>
@@ -33,19 +43,6 @@ export default class Page extends React.Component {
               </div>
               <div className={styles.pSentence}>
                 <a style={{color: "#262626"}} href={this.props.demoURL}>{this.props.demoURL}</a>
-              </div>
-              <div className={styles.pSubtitle}>
-                <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Picture
-              </div>
-              <div className={styles.pic}>
-                <div className={styles.pCp_cssslider}>
-                  <input type="radio" name="cp_switch" id="photo1" defaultChecked={true}/>
-                  <label htmlFor="photo1"><img src={this.props.pic[0]} alt=""/></label>
-                  <img src={this.props.pic[0]} alt=""/>
-                  <input type="radio" name="cp_switch" id="photo2"/>
-                  <label htmlFor="photo2"><img src={this.props.pic[1]} alt=""/></label>
-                  <img src={this.props.pic[1]} alt=""/>
-                </div>
               </div>
             </div>
           </div>

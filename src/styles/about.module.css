@@ -1,0 +1,148 @@
+.Page {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+.innerPage{
+    position: relative;
+    height: 100%;
+}
+
+.pMyName{
+    font-family: heisei-kaku-gothic-std, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.MyName {
+    font-size: 30px;
+    font-family: "heisei-kaku-gothic-std, sans-serif";
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 23%;
+    left: 8%;
+}
+
+.headerLogo {
+    color: #FFAB00;
+    padding-bottom: 6px;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+.headerLogo1{
+    color: #FFAB00;
+    padding-bottom: 6px;
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.headerLogo2 {
+    color: #FFAB00;
+    padding-bottom: 6px;
+    font-size: 23px;
+    padding-right: 5px;
+}
+
+.table{
+    margin-top: -20px;
+    width: 90%;
+    text-align: center;
+}
+
+.skillbarAnimation{
+    position: absolute;
+    left: 20%;
+    margin-top: 2.5%;
+    background: linear-gradient(to right, #FFAB00, #f83600);
+    height: 20px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.pSkillbarAnimation{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    background: linear-gradient(to right, #FFAB00, #f83600);
+    height: 20px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.pSkillbarWhite {
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    width: 60%;
+    filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.2));
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+}
+
+.skillbarWhite{
+    position: absolute;
+    left: 20%;
+    margin-top: 2.5%;
+    width: 25%;
+    filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.2));
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+}
+
+.pSkillPersent1{
+    position: absolute;
+    top: -50px;
+    right: 14vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pSkillPersent2{
+    position: absolute;
+    top: -40px;
+    right: 14vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skillPersent{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 0px;
+    left: 28vw;
+    font-weight: bold;
+}
+
+.pSkillNameContainer {
+    position: absolute;
+    top: -20px;
+}
+
+.skillNameContainer {
+    position: absolute;
+    left: 13%;
+}
+
+.pSkillName1 {
+    position: relative;
+    top: -30px;
+    left: 35vw;
+    font-size: 5vw;
+}
+
+.pSkillName2 {
+    position: relative;
+    top: -20px;
+    left: 35vw;
+    font-size: 5vw;
+}
+
+.skillName {
+    position: absolute;
+    left: 7vw;
+}

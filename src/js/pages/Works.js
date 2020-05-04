@@ -1,12 +1,12 @@
 import React from "react";
 import MediaQuery from "react-responsive";
 import { IoIosRemove } from "react-icons/io";
-import { animateScroll } from 'react-scroll';
 
 import Modal from "../components/Modal";
 import PModal from "../components/PModal";
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
-import styles from '../../styles/worksStyles.module.css';
+import styles from '../../styles/works.module.css';
 import portfolio_header from '../components/images/portfolio_header.png';
 import dekita_header from '../components/images/dekita_header.png';
 import stopwatch_header from '../components/images/stopwatch_header.png';
@@ -76,12 +76,13 @@ export default class Works extends React.Component {
     const UECTFSkill = "Illustrator";
     const UECTFDemoURL = "https://twitter.com/uectf";
     const UECTFPic = [UECTFlogo_modal1, UECTFlogo_modal2];
-    const GraduateThesisDescription = "2020年2月に発表した学部生時代の卒業論文です。集中力が低下する時、生体情報が変化することを利用し、休憩時に運動をすることで生体情報の変化を読み取り、運動をした方が集中力があがるという仮定を基に実験をしました。結果は有意ではなかったものの実際に課題の成績の向上がみられました。データ解析にpythonをしようしたり、生体情報を取得するためにiPhoneにアプリを作成したりしました。";
+    const GraduateThesisDescription = "2020年2月に発表した学部生時代の卒業論文です。集中力が低下する時、生体情報が変化することを利用し、休憩時に運動をすることで生体情報の変化を読み取り、運動をした方が集中力があがるという仮定を基に実験をしました。結果は有意ではなかったものの実際に課題の成績の向上がみられました。データ解析にpythonを使用したり、生体情報を取得するためにiPhoneにアプリを作成したりしました。";
     const GraduateThesisSkill = "Python, Swift, latex";
     const GraduateThesisPic = [graduate_thesis_modal1, graduate_thesis_modal2];
 
     return (
       <div>
+      <ScrollToTopOnMount/>
       <link rel="stylesheet" href="https://use.typekit.net/urt8xoe.css"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">

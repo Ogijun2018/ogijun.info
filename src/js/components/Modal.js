@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/modalStyle.module.css";
+import styles from "../../styles/modal.module.css";
 import { IoIosRemove } from "react-icons/io";
 import { GrClose } from "react-icons/gr";
 

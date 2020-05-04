@@ -3,8 +3,6 @@ import MediaQuery from "react-responsive";
 import { IoIosRemove} from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
-import styled from "styled-components";
-import delighters from "../components/delighters";
 import { ReactComponent as HTML } from '../components/images/html.svg';
 import { ReactComponent as CSS } from '../components/images/css-3.svg';
 import { ReactComponent as Expo } from '../components/images/expo.svg';
@@ -13,33 +11,10 @@ import { ReactComponent as REACT } from '../components/images/react.svg';
 import { ReactComponent as Redux } from '../components/images/redux.svg';
 import { ReactComponent as Python } from '../components/images/python.svg';
 
-import styles from '../../styles/styles.module.css';
+import styles from '../../styles/about.module.css';
 import MyPic from '../components/images/about_mypic.jpg';
 
 import anime from "animejs";
-
-export const PictureFuwatto = styled.div
-`
-width: "80%;
-position:"absolute";
-top: "35%";
-left: "10%";
-
-.delighter{
-  transition: all .3s ease-out;
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.delighter.started {
-  transform: none;
-  opacity: 1;
-}
-
-.delighter.started.ended{
-  border: solid red 10px;
-}
-`
 
 export default class About extends React.Component {
   render() {
@@ -48,13 +23,13 @@ export default class About extends React.Component {
       <link rel="stylesheet" href="https://use.typekit.net/urt8xoe.css"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">
-          <div style={{position:"absolute", height: "250%", width: "100%"}}>
+          <div style={{position:"absolute", height: "180%", width: "100%"}}>
             <div style={{position: "relative", top: "4%", paddingLeft: "4%"}}>
               <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
               About Me
             </div> 
             <div style={{position: "relative", top: "5%", paddingLeft: "14%"}}>
-              <div style={{fontFamily: "heisei-kaku-gothic-std, sans-serif", fontSize: 25, fontWeight: 600, fontStyle: "normal"}}>
+              <div className={styles.pMyName}>
                 荻野 隼
               </div>
               <div style={{fontSize: 18}}>
@@ -68,23 +43,23 @@ export default class About extends React.Component {
             <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "8%", left:"10%"}}>
               <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
               <div style={{fontSize: 20, marginTop: -10}}>
-                <FaPencilAlt style={{color: "#FFAB00",paddingBottom: 6,fontSize: 18}}></FaPencilAlt>
+                <FaPencilAlt className={styles.headerLogo1}></FaPencilAlt>
                 Education
               </div>
               <p style={{marginTop:5}}>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
               <div style={{fontSize: 20}}>
-                <RiCodeSSlashLine style={{color: "#FFAB00",paddingBottom: 6,fontSize: 23}}></RiCodeSSlashLine>
+                <RiCodeSSlashLine className={styles.headerLogo2}></RiCodeSSlashLine>
                 Programming
               </div>
               <p style={{marginTop:5}}>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。</p>
               <p>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
               <div style={{fontSize: 20}}>
-                <RiUserHeartLine style={{color: "#FFAB00",paddingBottom: 6,fontSize: 23}}></RiUserHeartLine>
+                <RiUserHeartLine className={styles.headerLogo2}></RiUserHeartLine>
                 Hobby
               </div>
               <p style={{marginTop: 5}}>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
               <p style={{fontSize: 18}}>Personal Best</p>
-              <table style={{marginTop: -20,width: "90%", textAlign: "center"}}>
+              <table className={styles.table}>
                 <tbody>
                 <tr>
                   <td>100m</td>
@@ -126,18 +101,18 @@ export default class About extends React.Component {
               <div ref = { ref => {
                   anime({
                     targets: ref,
-                    width: '48%',
+                    width: '42%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>80%</p>
-              <div style={{position:"absolute", top: -20}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent1}>70%</p>
+              <div className={styles.pSkillNameContainer}>
                 <HTML style={{position:"absolute", left: "8vw", width: "10vw", zIndex: 1}}></HTML>
                 <CSS style={{position:"absolute", left: "15vw", width:　"10vw"}}></CSS>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+                <p className={styles.pSkillName1}>
                   HTML&CSS
                 </p>
               </div>
@@ -146,17 +121,17 @@ export default class About extends React.Component {
               <div ref = { ref => {
                   anime({
                     targets: ref,
-                    width: '54%',
+                    width: '48%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>90%</p>
-              <div style={{position:"absolute", top: -20}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent1}>80%</p>
+              <div className={styles.pSkillNameContainer}>
                 <Javascript style={{position:"absolute", left: "10vw", width:　"12vw"}}></Javascript>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+                <p className={styles.pSkillName1}>
                   JavaScript
                 </p>
               </div>
@@ -165,17 +140,17 @@ export default class About extends React.Component {
               <div ref = { ref => {
                   anime({
                     targets: ref,
-                    width: '54%',
+                    width: '48%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>90%</p>
-              <div style={{position:"absolute", top: -20}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent1}>80%</p>
+              <div className={styles.pSkillNameContainer}>
                 <REACT style={{position:"absolute", left: "10vw", width: "13vw"}}></REACT>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+                <p className={styles.pSkillName1}>
                   React/React Native
                 </p>
               </div>
@@ -188,13 +163,13 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>50%</p>
-              <div style={{position:"absolute", top: -20}}>
-                <Redux style={{position:"absolute", left: "10vw", width: "13vw", zIndex: 1}}></Redux>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent1}>50%</p>
+              <div className={styles.pSkillNameContainer}>
+                <Redux style={{position:"absolute", left: "10vw", width: "13vw"}}></Redux>
+                <p className={styles.pSkillName1}>
                   Redux/Redux saga
                 </p>
               </div>
@@ -207,18 +182,18 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>60%</p>
-              <div style={{position:"absolute", top: -20}}>
-                <Expo style={{position:"absolute", left: "12vw", width: "13vw", zIndex: 1}}></Expo>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent1}>60%</p>
+              <div className={styles.pSkillNameContainer}>
+                <Expo style={{position:"absolute", left: "12vw", width: "13vw"}}></Expo>
+                <p className={styles.pSkillName1}>
                   Expo
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "41%", paddingBottom: 150}}>
+            <div style={{position: "relative", top: "41%", paddingBottom: 100}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -226,13 +201,13 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", top: "13%", left: "30%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.pSkillbarAnimation}>
               </div>
-              <div style={{position: "absolute", top: "13%", left: "30%", width: "60%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-              <p style={{position:"absolute",top: -50, right: "14vw", fontSize: 20, fontWeight: 'bold'}}>40%</p>
-              <div style={{position:"absolute", top: -20}}>
-                <Python style={{position:"absolute", left: "10vw", width: "13vw", zIndex: 1}}></Python>
-                <p style={{position: "relative", top: -30, left: "35vw", fontSize: "0.6rem"}}>
+              <div className={styles.pSkillbarWhite}></div>
+              <p className={styles.pSkillPersent2}>40%</p>
+              <div className={styles.pSkillNameContainer}>
+                <Python style={{position:"absolute", left: "10vw", width: "13vw"}}></Python>
+                <p className={styles.pSkillName2}>
                   Python
                 </p>
               </div>
@@ -245,7 +220,7 @@ export default class About extends React.Component {
             <IoIosRemove style={{position: "absolute", color: "#FFAB00", top: "13%", left: "5%"}}></IoIosRemove>
             <div style={{position: "absolute", top: "11%", left: "7%", fontWeight: 500, fontSize: 40}}>About Me</div>
             <div>
-              <div style={{fontSize: 30, fontFamily: "heisei-kaku-gothic-std, sans-serif", fontWeight: 600, fontStyle: "normal", position: "absolute", top: "23%", left: "8%"}}>
+              <div className={styles.MyName}>
                 荻野 隼
               </div>
               <div style={{fontSize: 20, position: "absolute", top: "28%", left: "8%"}}>
@@ -257,18 +232,18 @@ export default class About extends React.Component {
               <div style={{position: "absolute", fontSize: 18, width: "43%", height: "80%", top: "27%", right: "5%"}}>
                 <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
                   <div style={{fontSize: 20, marginTop: -10}}>
-                    <FaPencilAlt style={{color: "#FFAB00",paddingBottom: 6,fontSize: 18}}></FaPencilAlt>
+                    <FaPencilAlt className={styles.headerLogo}></FaPencilAlt>
                     Education
                   </div>
                   <p style={{marginTop:5}}>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
                   <div style={{fontSize: 20}}>
-                    <RiCodeSSlashLine style={{color: "#FFAB00",paddingBottom: 6,fontSize: 23}}></RiCodeSSlashLine>
+                    <RiCodeSSlashLine className={styles.headerLogo}></RiCodeSSlashLine>
                     Programming
                   </div>
                   <p style={{marginTop:5}}>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。</p>
                   <p>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
                   <div style={{fontSize: 20}}>
-                    <RiUserHeartLine style={{color: "#FFAB00",paddingBottom: 6,fontSize: 23}}></RiUserHeartLine>
+                    <RiUserHeartLine className={styles.headerLogo}></RiUserHeartLine>
                     Hobby
                   </div>
                   <p style={{marginTop: 5}}>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
@@ -284,16 +259,16 @@ export default class About extends React.Component {
               <div ref = { ref => {
                 anime({
                     targets: ref,
-                    width: '20%',
+                    width: '17.5%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>HTML&CSS</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>80%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>HTML&CSS</p>
+                  <p className={styles.skillPersent}>70%</p>
                   <HTML style={{position:"relative", width: "10%", zIndex: 1,}}></HTML>
                   <CSS style={{position:"relative", width:　"10%", marginLeft: -15}}></CSS>
                 </div>
@@ -302,16 +277,16 @@ export default class About extends React.Component {
               <div ref = { ref => {
                 anime({
                     targets: ref,
-                    width: '22.5%',
+                    width: '20%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>JavaScript</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>90%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>JavaScript</p>
+                  <p className={styles.skillPersent}>80%</p>
                   <Javascript style={{position:"relative", width:　"30%"}}></Javascript>
                 </div>
               </div>
@@ -319,16 +294,16 @@ export default class About extends React.Component {
               <div ref = { ref => {
                 anime({
                     targets: ref,
-                    width: '22.5%',
+                    width: '20%',
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>React/React&nbsp;Native</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>90%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>React/React&nbsp;Native</p>
+                  <p className={styles.skillPersent}>80%</p>
                   <REACT style={{position:"relative", width: "30%", zIndex: 1}}></REACT>
                 </div>
               </div>
@@ -340,12 +315,12 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>Redux/Redux&nbsp;saga</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>50%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>Redux/Redux&nbsp;saga</p>
+                  <p className={styles.skillPersent}>50%</p>
                   <Redux style={{position:"relative", width:　"30%"}}></Redux>
                 </div>
               </div>
@@ -357,12 +332,12 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>Expo</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>60%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>Expo</p>
+                  <p className={styles.skillPersent}>60%</p>
                   <Expo style={{position:"relative", width: "30%", zIndex: 1}}></Expo>
                 </div>
               </div>
@@ -374,12 +349,12 @@ export default class About extends React.Component {
                     easing: 'easeInOutQuad',
                     direction: 'normal',
                   });
-                }} style={{position: "absolute", left: "20%", marginTop: "2.5%", background: "linear-gradient(to right, #FFAB00, #f83600)", height: 20, borderRadius: 50, zIndex: 1}}>
+                }} className={styles.skillbarAnimation}>
                 </div>
-                <div style={{position: "absolute", left: "20%", marginTop: "2.5%", width: "25%", filter: "drop-shadow(1px 4px 4px rgba(0,0,0,0.2))" , height: 20, borderRadius: 50, backgroundColor: "#EFEFEF"}}></div>
-                <div style={{position:"absolute", left: "13%"}}>
-                  <p style={{position:"absolute", left: "7vw"}}>Python</p>
-                  <p style={{position:"absolute", fontSize: 30, marginTop: 0, left: "28vw", fontWeight: 'bold'}}>40%</p>
+                <div className={styles.skillbarWhite}></div>
+                <div className={styles.skillNameContainer}>
+                  <p className={styles.skillName}>Python</p>
+                  <p className={styles.skillPersent}>40%</p>
                   <Python style={{position:"relative", width: "30%", zIndex: 1}}></Python>
                 </div>
               </div>
