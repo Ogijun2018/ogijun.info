@@ -24,11 +24,11 @@ export default class About extends React.Component {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">
           <div style={{position:"absolute", height: "180%", width: "100%"}}>
-            <div style={{position: "relative", top: "4%", paddingLeft: "4%"}}>
+            <div style={{position: "relative", top: "7%", paddingLeft: "4%"}}>
               <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
               About Me
             </div> 
-            <div style={{position: "relative", top: "5%", paddingLeft: "14%"}}>
+            <div style={{position: "relative", top: "9%", paddingLeft: "14%"}}>
               <div className={styles.pMyName}>
                 荻野 隼
               </div>
@@ -37,10 +37,10 @@ export default class About extends React.Component {
               </div>
             </div>
 
-            <div style={{width: "80%",position:"relative",top: "6%",left: "10%"}}>
+            <div style={{width: "80%",position:"relative",top: "10%",left: "10%"}}>
               <img src={MyPic} alt=""/>
             </div>
-            <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "8%", left:"10%"}}>
+            <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "12%", left:"10%"}}>
               <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
               <div style={{fontSize: 20, marginTop: -10}}>
                 <FaPencilAlt className={styles.headerLogo1}></FaPencilAlt>
@@ -92,12 +92,24 @@ export default class About extends React.Component {
                 </tbody>
               </table>
             </div>
+
+            <div style={{position: "relative", top: "14%", paddingLeft: "5%"}}>
+              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
+              Passion
+            </div>
+            <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "14%", left:"10%"}}>
+              <div style={{width: "100%", textAlign: "center", marginBottom: 10}}>
+                <span style={{fontSize: "0.8rem", fontWeight:"bold"}}>- 神は細部に宿る -</span>
+              </div>
+              本当に素晴らしい技術やこだわりは目に見えにくい、またそういった見えないような部分でこそ作品の本質が決まる。この格言は、エンジニアリングにおいても同様であると考えています。
+              ボタン一つ、小さな機能一つにおいても、デザインやインタラクションはユーザに対して影響を及ぼします。完成させるだけでなく、ユーザの視点に立ってどんな機能があったらいいか、また使いたいと思ってもらえるかを常に考えるようにしています。
+            </div>
             
-            <div style={{position: "relative", top: "10%", paddingLeft: "5%"}}>
+            <div style={{position: "relative", top: "16%", paddingLeft: "5%"}}>
               <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
               Skill set
             </div>
-            <div style={{position: "relative", top: "12%"}}>
+            <div style={{position: "relative", top: "20%"}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -117,7 +129,7 @@ export default class About extends React.Component {
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "18%"}}>
+            <div style={{position: "relative", top: "28%"}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -136,7 +148,7 @@ export default class About extends React.Component {
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "24%"}}>
+            <div style={{position: "relative", top: "36%"}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -155,7 +167,7 @@ export default class About extends React.Component {
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "30%"}}>
+            <div style={{position: "relative", top: "44%"}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -174,7 +186,7 @@ export default class About extends React.Component {
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "36%"}}>
+            <div style={{position: "relative", top: "52%"}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -193,7 +205,7 @@ export default class About extends React.Component {
                 </p>
               </div>
             </div>
-            <div style={{position: "relative", top: "41%", paddingBottom: 100}}>
+            <div style={{position: "relative", top: "58%", paddingBottom: 100}}>
               <div ref = { ref => {
                   anime({
                     targets: ref,
@@ -247,6 +259,23 @@ export default class About extends React.Component {
                     Hobby
                   </div>
                   <p style={{marginTop: 5}}>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.Page}>
+          <div className={styles.innerPage}>
+            <div style={{position: "relative", paddingLeft: "5%", fontWeight: 500, fontSize: 40}}>
+              <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>
+              Passion
+            </div>
+            <div className={styles.box}>
+              <div style={{position: "relative", fontSize: "0.7rem", width: "100%", top: "20%", paddingLeft: 100, paddingRight: 100, justifyContent: "center"}}>
+                <div style={{width: "100%", textAlign: "center", paddingBottom: 60,}}>
+                  <span style={{fontSize: "0.8rem", fontWeight:"bold"}}>- 神は細部に宿る -</span>
+                </div>
+                本当に素晴らしい技術やこだわりは目に見えにくい、またそういった見えないような部分でこそ作品の本質が決まる。この格言は、エンジニアリングにおいても同様であると考えています。
+                ボタン一つ、小さな機能一つにおいても、デザインやインタラクションはユーザに対して影響を及ぼします。完成させるだけでなく、ユーザの視点に立ってどんな機能があったらいいか、また使いたいと思ってもらえるかを常に考えるようにしています。
               </div>
             </div>
           </div>

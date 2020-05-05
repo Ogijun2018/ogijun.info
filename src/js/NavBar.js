@@ -50,9 +50,8 @@ class NavigationBar extends React.Component {
                     <Link className={styles.pMyNameButton} to={"/"}>Jun Ogino</Link>
                     <HamburgerSpin buttonHeight={20} buttonWidth={20} buttonStyle={{position: 'fixed', right: '0.8rem', top: '0.15rem', zIndex: 20}} isActive={this.state.hamburgerPress} toggleButton={this.onHamburgerButtonPress} barColor="gray" />
                     {/* modal */}
-                    {this.state.hamburgerPress &&
-                    <div className={styles.pModalOutSide} style={{transition: '1s', opacity: this.state.hamburgerPress ? 1 : 0}}>
-                        <ul className={styles.pListContainer} style={{display: this.state.hamburgerPress ? "block" : "none"}}>
+                    <div className={styles.pModalOutSide} style={{transition: "opacity 0.6s ease 0s", visibility: this.state.hamburgerPress ? "visible" : "hidden", opacity: this.state.hamburgerPress ? 1 : 0}}>
+                        <ul className={styles.pListContainer} style={{transition: "opacity 0.6s ease 0s", visibility: this.state.hamburgerPress ? "visible" : "hidden", opacity: this.state.hamburgerPress ? 1 : 0}}>
                             <li className={styles.pListItem}>
                                 <Link className={styles.pNewItem} onClick={this.onHamburgerButtonPress} to={"/"}>Home</Link>
                             </li>
@@ -63,10 +62,10 @@ class NavigationBar extends React.Component {
                                 <Link className={styles.pNewItem} onClick={this.onHamburgerButtonPress} to={"/Works"}>Works</Link>
                             </li>
                             <li className={styles.pListItemMini}>
-                                <a style={{fontSize: "20px", color: "#EFEFEF"}} href="mailto:ogijun.mk@hotmail.co.jp">ogijun.mk@hotmail.co.jp</a>
+                                <a className={styles.pNewItemMini} style={{fontSize: "20px", color: "#EFEFEF"}} href="mailto:ogijun.mk@hotmail.co.jp">ogijun.mk@hotmail.co.jp</a>
                             </li>
                             <li className={styles.pListItemMini}>
-                                <a style={{fontSize: "20px", color: "#EFEFEF"}} href="https://www.wantedly.com/users/87254893" >Wantedly</a>
+                                <a className={styles.pNewItemMini} style={{fontSize: "20px", color: "#EFEFEF"}} href="https://www.wantedly.com/users/87254893" >Wantedly</a>
                             </li>
                             <li className={styles.pListItemMini}>
                                 <div>
@@ -80,7 +79,6 @@ class NavigationBar extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    }
                 </div>
             }
             {this.props.responsive === "desktop" &&

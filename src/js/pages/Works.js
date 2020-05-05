@@ -4,9 +4,11 @@ import { IoIosRemove } from "react-icons/io";
 
 import Modal from "../components/Modal";
 import PModal from "../components/PModal";
+import Rodal from 'rodal';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 import styles from '../../styles/works.module.css';
+import 'rodal/lib/rodal.css';
 import portfolio_header from '../components/images/portfolio_header.png';
 import dekita_header from '../components/images/dekita_header.png';
 import stopwatch_header from '../components/images/stopwatch_header.png';
@@ -150,7 +152,11 @@ export default class Works extends React.Component {
                   </div>
                 </ul>
               </div>
-              {this.state.modalVisible ? <PModal title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic} visible={this.state.modalVisible} onPressClose={() => {this.closeModal()}}></PModal> : null}
+              <Rodal animation="fade" duration={500} visible={this.state.modalVisible} onClose={this.closeModal.bind(this)} width={0} height={0} showCloseButton={false}>
+                <div>
+                <PModal title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic} visible={this.state.modalVisible} onPressClose={() => {this.closeModal()}}></PModal>
+                </div>
+              </Rodal>
             </div>
           </div>
       </MediaQuery>

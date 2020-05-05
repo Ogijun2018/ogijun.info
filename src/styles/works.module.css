@@ -64,7 +64,7 @@
     border-radius: 20px;
     background-color: #EFEFEF;
     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
-    transition: .5s;
+    transform: translateZ(0);
 }
 
 .worksItem:hover{
