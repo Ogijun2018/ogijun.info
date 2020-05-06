@@ -225,7 +225,11 @@ export default class Works extends React.Component {
                   </div>
                 </ul>
               </div>
-              {this.state.modalVisible ? <Modal visible={this.state.modalVisible} className="animated fadeIn" title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic}  onPressClose={() => {this.closeModal()}}></Modal> :null}
+              <Rodal animation="fade" duration={500} visible={this.state.modalVisible} onClose={this.closeModal.bind(this)} width={"80%"} height={"80%"} showCloseButton={false} customStyles={{background: "rgba(0, 0, 0, 0.2)"}} showMask={false}>
+                <div>
+                <Modal visible={this.state.modalVisible} className="animated fadeIn" title={this.state.modalTitle} description={this.state.modalDescription} skill={this.state.modalSkill} demoURL={this.state.modalDemoURL} pic={this.state.modalPic}  onPressClose={() => {this.closeModal()}}></Modal>
+                </div>
+              </Rodal>
             </div>
           </div>
       </MediaQuery>
