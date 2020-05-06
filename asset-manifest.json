@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.284c5bd9.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.67e050b6.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.67e050b6.chunk.js.map",
+    "main.css": "/portfolio_react/static/css/main.eae4d794.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.4451ead7.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.4451ead7.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.d4c6cf8a.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.d4c6cf8a.js.map",
     "static/css/2.b48abad0.chunk.css": "/portfolio_react/static/css/2.b48abad0.chunk.css",
-    "static/js/2.9fd84914.chunk.js": "/portfolio_react/static/js/2.9fd84914.chunk.js",
-    "static/js/2.9fd84914.chunk.js.map": "/portfolio_react/static/js/2.9fd84914.chunk.js.map",
+    "static/js/2.c962f997.chunk.js": "/portfolio_react/static/js/2.c962f997.chunk.js",
+    "static/js/2.c962f997.chunk.js.map": "/portfolio_react/static/js/2.c962f997.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
-    "precache-manifest.de6ad2145222fabca16805c1a9b0fbcd.js": "/portfolio_react/precache-manifest.de6ad2145222fabca16805c1a9b0fbcd.js",
+    "precache-manifest.17752de825293eb1894eeddc79621bc0.js": "/portfolio_react/precache-manifest.17752de825293eb1894eeddc79621bc0.js",
     "service-worker.js": "/portfolio_react/service-worker.js",
     "static/css/2.b48abad0.chunk.css.map": "/portfolio_react/static/css/2.b48abad0.chunk.css.map",
-    "static/css/main.284c5bd9.chunk.css.map": "/portfolio_react/static/css/main.284c5bd9.chunk.css.map",
-    "static/js/2.9fd84914.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.9fd84914.chunk.js.LICENSE.txt",
+    "static/css/main.eae4d794.chunk.css.map": "/portfolio_react/static/css/main.eae4d794.chunk.css.map",
+    "static/js/2.c962f997.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.c962f997.chunk.js.LICENSE.txt",
     "static/media/UECTFlogo_header.png": "/portfolio_react/static/media/UECTFlogo_header.4a8be480.png",
     "static/media/UECTFlogo_modal1.png": "/portfolio_react/static/media/UECTFlogo_modal1.2a10a799.png",
     "static/media/UECTFlogo_modal2.png": "/portfolio_react/static/media/UECTFlogo_modal2.f3dbb7c9.png",
@@ -44,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.d4c6cf8a.js",
     "static/css/2.b48abad0.chunk.css",
-    "static/js/2.9fd84914.chunk.js",
-    "static/css/main.284c5bd9.chunk.css",
-    "static/js/main.67e050b6.chunk.js"
+    "static/js/2.c962f997.chunk.js",
+    "static/css/main.eae4d794.chunk.css",
+    "static/js/main.4451ead7.chunk.js"
   ]
 }
