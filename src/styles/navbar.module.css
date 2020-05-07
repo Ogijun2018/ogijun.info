@@ -147,6 +147,11 @@
     margin-top: 5px;
 }
 
+.pNewItemMini{
+    font-size: 20px;
+    color: #EFEFEF;
+}
+
 .pNewItemMini:hover{
     transition: 0.3s;
     text-decoration: none;

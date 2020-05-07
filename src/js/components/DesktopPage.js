@@ -23,7 +23,7 @@ export default class Page extends React.Component {
                            <Link to={"/" + this.props.pageName} className={styles.btnShowMore}>show more</Link>
                         </div>
                     }
-                </div>
+                    </div>
             }
             {this.props.layout === "left" &&
                 <div className={styles.innerPage}>

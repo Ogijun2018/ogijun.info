@@ -55,7 +55,7 @@
 .skillbarAnimation{
     position: absolute;
     left: 20%;
-    margin-top: 2.5%;
+    margin-top: 2.5vw;
     background: linear-gradient(to right, #FFAB00, #f83600);
     height: 20px;
     border-radius: 50px;

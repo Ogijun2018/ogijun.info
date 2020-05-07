@@ -62,10 +62,10 @@ class NavigationBar extends React.Component {
                                 <Link className={styles.pNewItem} onClick={this.onHamburgerButtonPress} to={"/Works"}>Works</Link>
                             </li>
                             <li className={styles.pListItemMini}>
-                                <a className={styles.pNewItemMini} style={{fontSize: "20px", color: "#EFEFEF"}} href="mailto:ogijun.mk@hotmail.co.jp">ogijun.mk@hotmail.co.jp</a>
+                                <a className={styles.pNewItemMini} href="mailto:ogijun.mk@hotmail.co.jp">ogijun.mk@hotmail.co.jp</a>
                             </li>
                             <li className={styles.pListItemMini}>
-                                <a className={styles.pNewItemMini} style={{fontSize: "20px", color: "#EFEFEF"}} href="https://www.wantedly.com/users/87254893" >Wantedly</a>
+                                <a className={styles.pNewItemMini} href="https://www.wantedly.com/users/87254893">Wantedly</a>
                             </li>
                             <li className={styles.pListItemMini}>
                                 <div>
@@ -92,11 +92,6 @@ class NavigationBar extends React.Component {
                             </li>
                             <li className={styles.listItem}>
                                 <Link className={styles.newItem} to={"/Works"}>Works</Link>
-                            </li>
-                            <li className={styles.listItem}>
-                                <a className={styles.newItem} href="https://www.wantedly.com/users/87254893">
-                                    Wantedly
-                                </a>
                             </li>
                             <li className={styles.listItem}>
                                 <a href="mailto:ogijun.mk@hotmail.co.jp">

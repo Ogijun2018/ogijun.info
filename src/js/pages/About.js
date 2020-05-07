@@ -226,7 +226,7 @@ export default class About extends React.Component {
             </div>
           </div>
         </MediaQuery>
-        <MediaQuery query="(min-width: 768px">
+        <MediaQuery query="(min-width: 768px)">
         <div className={styles.Page}>
           <div className={styles.innerPage}>
             <IoIosRemove style={{position: "absolute", color: "#FFAB00", top: "13%", left: "5%"}}></IoIosRemove>
@@ -270,7 +270,7 @@ export default class About extends React.Component {
               Passion
             </div>
             <div className={styles.box}>
-              <div style={{position: "relative", fontSize: "0.7rem", width: "100%", top: "20%", paddingLeft: 100, paddingRight: 100, justifyContent: "center"}}>
+              <div style={{position: "relative", fontSize: "1.1vw", width: "100%", top: "20%", paddingLeft: 100, paddingRight: 100, justifyContent: "center"}}>
                 <div style={{width: "100%", textAlign: "center", paddingBottom: 60,}}>
                   <span style={{fontSize: "0.8rem", fontWeight:"bold"}}>- 神は細部に宿る -</span>
                 </div>
