@@ -1,22 +1,45 @@
 /* スマホレスポンシブデザイン用 */
 .Page {
     height: 100vh;
-    width: 100vw;
   }
+
+.HomeTop {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
   
   .innerPage{
     position: relative;
     height: 100%;
   }
+
+.NameContainer{
+  flex: 1;
+  text-align: center;
+  /* background-color: blue; */
+}
   
-  .MyName {
-    /* remはhtml要素のfont-sizeの倍になる */
-    padding-top: 20vh;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 7.5vw;
-    margin-left: 10vw;
-  }
+.LogoAnimeContainer {
+  flex: 1.2;
+  /* padding: 3vw; */
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+
+.LogoAnime {
+  fill: none;
+  stroke: #FFAB00;
+  stroke-width: 5px;
+  width: 75%;
+}
+
+.MyName {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 7.5vw;
+  line-height: 7vw;
+}
   
   .pMyName {
     padding-top: 60vh;
@@ -27,8 +50,10 @@
   }
   
   .Jun {
-    margin-left: 0.3rem;
-    margin-bottom: -4vw;
+    margin-right: 20%;
+  }
+
+  .Ogino {
   }
   
   .pJun {
@@ -44,8 +69,7 @@
   }
   
   .Position {
-    margin-top: -1.5rem;
-    margin-left: 0.3rem;
+    margin-top: -1rem;
     font-weight: 500;
     font-size: 3vw;
   }
