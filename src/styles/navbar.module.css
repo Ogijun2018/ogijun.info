@@ -1,14 +1,59 @@
 .myNameButton {
     margin-top: 30px;
     margin-left: 50px;
-    font-size: 0.8em;
     cursor: pointer;
-    color: #262626;
     text-decoration: none;
     float: left;
+    color: #262626;
 }
 
 .myNameButton:hover {
+    transition: 0.3s;
+    text-decoration: none;
+    color: gray;
+}
+
+.navigationContainer{
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    z-index: 20;
+    font-size: 0.8rem;
+}
+
+.newItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: #262626;
+    text-decoration: none;
+    float: right;
+}
+
+.newItem:hover {
+    transition: 0.3s;
+    text-decoration: none;
+    color: gray;
+}
+
+.listContainer {
+    padding-top: 15px;
+    list-style: none;
+}
+
+.listItem {
+    align-items: center;
+    float: left;
+}
+
+.SNSButton {
+    margin-top: -10px;
+    margin-right: 50px;
+    color: #262626;
+    width: 30;
+    font-size: 1.2rem;
+}
+
+.SNSButton:hover {
     transition: 0.3s;
     text-decoration: none;
     color: gray;
@@ -28,56 +73,6 @@
     transition: 0.3s;
     color: gray;
     text-decoration: none;
-}
-
-.navigationContainer{
-    width: 100%;
-    height: 7%;
-    position: fixed;
-    z-index: 20;
-}
-
-.newItem{
-    margin-right: 50px;
-    font-size: 0.6em;
-    cursor: pointer;
-    color: #262626;
-    text-decoration: none;
-    float: right;
-}
-
-.newItem:hover {
-    transition: 0.3s;
-    text-decoration: none;
-    color: gray;
-}
-
-.contactButton {
-    margin-right: 50px;
-    font-size: 0.6em;
-    cursor: pointer;
-    color: #262626;
-    text-decoration: none;
-    float: right;
-}
-
-.contactButton:hover {
-    transition: 0.3s;
-    text-decoration: none;
-    color: gray;
-}
-
-.SNSButton {
-    margin-top: -35px;
-    margin-right: 50px;
-    color: #262626;
-    width: 30;
-}
-
-.SNSButton:hover {
-    transition: 0.3s;
-    text-decoration: none;
-    color: gray;
 }
 
 .pSNSButton {
@@ -109,11 +104,6 @@
     color: gray;
 }
 
-.listContainer {
-    padding-top: 15px;
-    list-style: none;
-}
-
 .pListContainer {
     z-index: 10;
     list-style: none;
@@ -131,12 +121,6 @@
     background-color: rgba(0,0,0,0.8);
     z-index: 10;
     text-align: center;
-}
-
-.listItem {
-    align-items: center;
-    float: left;
-    font-size: 40px;
 }
 
 .pListItem {

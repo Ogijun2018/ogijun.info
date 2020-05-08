@@ -44,7 +44,6 @@ class NavigationBar extends React.Component {
     render() {
         return(
         <div>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
             {this.props.responsive === "phone" &&
                 <div>
                     <Link className={styles.pMyNameButton} to={"/"}>Jun Ogino</Link>

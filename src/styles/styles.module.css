@@ -1,4 +1,3 @@
-/* スマホレスポンシブデザイン用 */
 .Page {
     height: 100vh;
   }
@@ -9,28 +8,27 @@
     height: 100vh;
 }
   
-  .innerPage{
-    position: relative;
-    height: 100%;
-  }
+.innerPage{
+  position: relative;
+  height: 100%;
+}
 
 .NameContainer{
   flex: 1;
   text-align: center;
-  /* background-color: blue; */
 }
   
 .LogoAnimeContainer {
   flex: 1.2;
-  /* padding: 3vw; */
   box-sizing: border-box;
-  /* background-color: red; */
+  text-align: center;
 }
 
 .LogoAnime {
   fill: none;
   stroke: #FFAB00;
   stroke-width: 5px;
+  padding: 20px;
   width: 75%;
 }
 
@@ -41,192 +39,177 @@
   line-height: 7vw;
 }
   
-  .pMyName {
-    padding-top: 60vh;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-  }
-  
-  .Jun {
-    margin-right: 20%;
-  }
+.pMyName {
+  padding-top: 60vh;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
 
-  .Ogino {
-  }
-  
-  .pJun {
-    margin-bottom: -0.5rem;
-  }
-  
-  .F {
-    color: #FFAB00;
-  }
-  
-  .J {
-    color: #FFAB00;
-  }
-  
-  .Position {
-    margin-top: -1rem;
-    font-weight: 500;
-    font-size: 3vw;
-  }
-  
-  .pPosition {
-    margin-top: -1rem;
-    font-weight: 700;
-    font-size: 0.8rem;
-  }
-  
-  .leftHeadline {
-    position: absolute;
-    font-weight: 700;
-    font-size: 8vw;
-    top: 20vh;
-    left: 12%;
-  }
-  
-  .rightHeadline {
-    position: absolute;
-    font-weight: 700;
-    font-size: 8vw;
-    top: 20vh;
-    right: 12%;
-  }
-  
-  .leftLine {
-    position: absolute;
-    left: 12%;
-    top: 40vh;
-    border-top: 5px solid #FFAB00;
-    width: 15vw;
-  }
-  
-  .rightLine {
-    position: absolute;
-    right: 12%;
-    top: 40vh;
-    border-top: 5px solid #FFAB00;
-    width: 15vw;
-  }
-  
-  .leftParagraph {
-    position: absolute;
-    float: left;
-    top: 45%;
-    left: 12%;
-    z-index: 1;
-    font-size: 1.5vw;
-  }
-  
-  .rightParagraph {
-    position: absolute;
-    float: left;
-    top: 45%;
-    right: 12%;
-    z-index: 1;
-    font-size: 1.5vw;
-  }
-  
-  .leftImage {
-    position: absolute;
-    top: 15%;
-    right: 8%;
-    width: 40vw;
-    z-index: 0;
-  }
-  
-  .rightImage {
-    position: absolute;
-    top: 15%;
-    left: 8%;
-    width: 40vw;
-    z-index: 0;
-  }
-  
-  .leftBtnShowMoreContainer {
-    position: absolute;
-    top: 70%;
-    left: 12%;
-  }
-  
-  .rightBtnShowMoreContainer {
-    position: absolute;
-    top: 70%;
-    left: 78%;
-  }
-  
-  .btnShowMore {
-    position: absolute;
-    display: inline-block;
-    width: 180px;
-    height:50px;
-    text-align: center;
-    background-color: #FFAB00;
-    font-size: 20px;
-    line-height: 52px;
-    color: #FFF;
-    text-decoration: none;
-    border: 2px solid #FFAB00;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .btnShowMore:after{
-    width: 100%;
-    height: 0;
-    content:"";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background : #EFEFEF;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transition: .2s;
-    z-index: -1;
-  }
-  
-  .btnShowMore:hover{
-    color: #FFAB00;
-  }
-  
-  .btnShowMore:hover:after{
-    height: 240%;
-    opacity: 1;
-  }
-  
-  .btnShowMore:active:after{
-    height: 340%;
-    opacity: 1;
-  }
-  
-  .link {
-    color: #262626;
-  }
-  
-  .link:hover{
-    text-decoration: none;
-    transition: 0.3s;
-    color: gray;
-  }
-  
-  .socialAccount{
-    color: #262626;
-    font-size: 80;
-    margin-right: 40px;
-  }
-  
-  .socialAccount:hover {
-    text-decoration: none;
-    color: gray;
-  }
-  
-  .ScrollDown {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 44%;
-    justify-content: center;
-    align-items: center;
-  }
+.Jun {
+  margin-right: 20%;
+}
+
+.pJun {
+  margin-bottom: -0.5rem;
+}
+
+.Position {
+  margin-top: -1rem;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+.pPosition {
+  margin-top: -1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.leftHeadline {
+  position: absolute;
+  font-weight: 700;
+  font-size: 8vw;
+  top: 20vh;
+  left: 12%;
+}
+
+.rightHeadline {
+  position: absolute;
+  font-weight: 700;
+  font-size: 8vw;
+  top: 20vh;
+  right: 12%;
+}
+
+.leftLine {
+  position: absolute;
+  left: 12%;
+  top: 40vh;
+  border-top: 5px solid #FFAB00;
+  width: 15vw;
+}
+
+.rightLine {
+  position: absolute;
+  right: 12%;
+  top: 40vh;
+  border-top: 5px solid #FFAB00;
+  width: 15vw;
+}
+
+.leftParagraph {
+  position: absolute;
+  float: left;
+  top: 45%;
+  left: 12%;
+  z-index: 1;
+  font-size: 1.5vw;
+}
+
+.rightParagraph {
+  position: absolute;
+  float: left;
+  top: 45%;
+  right: 12%;
+  z-index: 1;
+  font-size: 1.5vw;
+}
+
+.leftImage {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  width: 40vw;
+  z-index: 0;
+}
+
+.rightImage {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 40vw;
+  z-index: 0;
+}
+
+.leftBtnShowMoreContainer {
+  position: absolute;
+  top: 70%;
+  left: 12%;
+}
+
+.rightBtnShowMoreContainer {
+  position: absolute;
+  top: 70%;
+  left: 78%;
+}
+
+.btnShowMore {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height:50px;
+  text-align: center;
+  background-color: #FFAB00;
+  font-size: 20px;
+  line-height: 52px;
+  color: #FFF;
+  text-decoration: none;
+  border: 2px solid #FFAB00;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnShowMore:after{
+  width: 100%;
+  height: 0;
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background : #EFEFEF;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: .2s;
+  z-index: -1;
+}
+
+.btnShowMore:hover{
+  color: #FFAB00;
+}
+
+.btnShowMore:hover:after{
+  height: 240%;
+  opacity: 1;
+}
+
+.btnShowMore:active:after{
+  height: 340%;
+  opacity: 1;
+}
+
+.link {
+  color: #262626;
+}
+
+.link:hover{
+  text-decoration: none;
+  transition: 0.3s;
+  color: gray;
+}
+
+.socialAccount{
+  color: #262626;
+  font-size: 80;
+  margin-right: 40px;
+}
+
+.socialAccount:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.ScrollDown {
+  text-align: center;    
+}
