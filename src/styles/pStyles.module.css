@@ -31,7 +31,8 @@
     top: 70%;
     left: 7%;
     z-index: 1;
-    line-height: 0.8rem;
+    margin-top: 10px;
+    line-height: 1vh;
     font-size: 15px;
 }
 
