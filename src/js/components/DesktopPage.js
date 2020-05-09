@@ -5,44 +5,56 @@ import { Link } from "react-router-dom";
 export default class Page extends React.Component {
     render() {
       return(
-        <div className={styles.Page}>
+        <div>
             {this.props.layout === "right" &&
-                <div className={styles.innerPage}>
-                    <div className={styles.rightHeadline}>
-                        {this.props.pageName}
-                    </div>
-                    <div className={styles.rightImage}>
+            <div className={styles.Page}>
+                <div className={styles.ImageSide}>
+                    <div className={styles.ImageContainer} style={{marginLeft: 60}}>
                         <img src={this.props.imgName} alt=""/>
                     </div>
-                    <div className={styles.rightLine}></div>
-                    <div className={styles.rightParagraph}>
-                        {this.props.text}
-                    </div>
-                    {this.props.showMoreBtn &&
-                        <div className={styles.rightBtnShowMoreContainer}>
-                           <Link to={"/" + this.props.pageName} className={styles.btnShowMore}>show more</Link>
+                </div>
+                <div className={styles.SentenceSide}>
+                    <div className={styles.SentenceContainer} style={{paddingLeft: "15vw"}}>
+                        <div className={styles.Headline}>
+                            {this.props.pageName}
                         </div>
-                    }
+                        <div className={styles.Line} style={{marginLeft: "4.5vw"}}></div>
+                        <div className={styles.Paragraph}>
+                            {this.props.text}
+                        </div>
+                        <div className={styles.btnShowMoreContainer} style={{marginLeft: "9vw"}}>
+                        {this.props.showMoreBtn &&
+                            <Link to={"/" + this.props.pageName} className={styles.btnShowMore}>show more</Link>
+                        }
+                        </div>
                     </div>
+                </div>
+            </div>
             }
             {this.props.layout === "left" &&
-                <div className={styles.innerPage}>
-                    <div className={styles.leftHeadline}>
-                        {this.props.pageName}
+            <div className={styles.Page}>
+                <div className={styles.SentenceSide}>
+                    <div className={styles.SentenceContainer}>
+                        <div className={styles.Headline}>
+                            {this.props.pageName}
+                        </div>
+                        <div className={styles.Line}></div>
+                        <div className={styles.Paragraph}>
+                            {this.props.text}
+                        </div>
+                        <div className={styles.btnShowMoreContainer}>                    
+                        {this.props.showMoreBtn &&
+                                <Link to={"/" + this.props.pageName} className={styles.btnShowMore}>show more</Link>
+                        }
+                        </div>
                     </div>
-                    <div className={styles.leftImage}>
+                </div>
+                <div className={styles.ImageSide}>
+                    <div className={styles.ImageContainer} style={{marginRight: 60}}>
                         <img src={this.props.imgName} alt=""/>
                     </div>
-                    <div className={styles.leftLine}></div>
-                    <div className={styles.leftParagraph}>
-                        {this.props.text}
-                    </div>
-                    {this.props.showMoreBtn &&
-                        <div className={styles.leftBtnShowMoreContainer}>
-                            <Link to={"/" + this.props.pageName} className={styles.btnShowMore}>show more</Link>
-                        </div>
-                    }
                 </div>
+            </div>
             }
         </div>
       );

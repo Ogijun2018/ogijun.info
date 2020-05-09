@@ -1,21 +1,35 @@
-.Page {
-    height: 100vh;
-  }
+.wholePage{
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .HomeTop {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-  
-.innerPage{
-  position: relative;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .NameContainer{
   flex: 1;
   text-align: center;
+}
+
+.MyName {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 7.5vw;
+  line-height: 7vw;
+}
+
+.Jun {
+  margin-right: 20%;
+}
+
+.Position {
+  margin-top: -1rem;
+  font-weight: 500;
+  font-size: 3vw;
 }
   
 .LogoAnimeContainer {
@@ -32,11 +46,47 @@
   width: 75%;
 }
 
-.MyName {
-  font-weight: 900;
-  font-style: normal;
-  font-size: 7.5vw;
-  line-height: 7vw;
+.ScrollDown {
+  position: absolute;
+  bottom: 0.1vh;
+  left: 43%;
+  text-align: center;   
+  font-size: 2vw; 
+}
+
+.Page {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.ImageSide {
+  display: flex;
+  flex: 1.1;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageContainer {
+  width: 65%;
+}
+
+.SentenceSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SentenceContainer {
+  width: 100%;
+  height: 55%;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 13vw;
 }
   
 .pMyName {
@@ -47,18 +97,8 @@
   margin-left: 1.5rem;
 }
 
-.Jun {
-  margin-right: 20%;
-}
-
 .pJun {
   margin-bottom: -0.5rem;
-}
-
-.Position {
-  margin-top: -1rem;
-  font-weight: 500;
-  font-size: 3vw;
 }
 
 .pPosition {
@@ -67,95 +107,41 @@
   font-size: 0.8rem;
 }
 
-.leftHeadline {
-  position: absolute;
+.Headline {
+  display: flex;
+  flex: 2;
   font-weight: 700;
   font-size: 8vw;
-  top: 20vh;
-  left: 12%;
 }
 
-.rightHeadline {
-  position: absolute;
-  font-weight: 700;
-  font-size: 8vw;
-  top: 20vh;
-  right: 12%;
-}
-
-.leftLine {
-  position: absolute;
-  left: 12%;
-  top: 40vh;
+.Line {
+  display: flex;
+  flex: 1;
   border-top: 5px solid #FFAB00;
   width: 15vw;
 }
 
-.rightLine {
-  position: absolute;
-  right: 12%;
-  top: 40vh;
-  border-top: 5px solid #FFAB00;
-  width: 15vw;
-}
-
-.leftParagraph {
-  position: absolute;
-  float: left;
-  top: 45%;
-  left: 12%;
-  z-index: 1;
+.Paragraph {
+  display: flex;
+  flex: 3;
   font-size: 1.5vw;
   line-height: 1;
 }
 
-.rightParagraph {
-  position: absolute;
-  float: left;
-  top: 45%;
-  right: 12%;
-  z-index: 1;
-  font-size: 1.5vw;
-  line-height: 1;
-}
-
-.leftImage {
-  position: absolute;
-  top: 15%;
-  right: 8%;
-  width: 40vw;
-  z-index: 0;
-}
-
-.rightImage {
-  position: absolute;
-  top: 15%;
-  left: 8%;
-  width: 40vw;
-  z-index: 0;
-}
-
-.leftBtnShowMoreContainer {
-  position: absolute;
-  top: 70%;
-  left: 12%;
-}
-
-.rightBtnShowMoreContainer {
-  position: absolute;
-  top: 70%;
-  left: 78%;
+.btnShowMoreContainer {
+  display: flex;
+  flex: 1;
 }
 
 .btnShowMore {
   position: absolute;
   display: inline-block;
-  width: 180px;
-  height:50px;
+  width: 10.5vw;
+  height: 3.5vw;
   text-align: center;
   background-color: #FFAB00;
-  font-size: 20px;
-  line-height: 52px;
+  font-size: 1.5vw;
+  line-height: 3vw;
   color: #FFF;
   text-decoration: none;
   border: 2px solid #FFAB00;
@@ -199,19 +185,4 @@
   text-decoration: none;
   transition: 0.3s;
   color: gray;
-}
-
-.socialAccount{
-  color: #262626;
-  font-size: 80;
-  margin-right: 40px;
-}
-
-.socialAccount:hover {
-  text-decoration: none;
-  color: gray;
-}
-
-.ScrollDown {
-  text-align: center;    
 }

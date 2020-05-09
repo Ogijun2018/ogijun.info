@@ -220,7 +220,7 @@ export default class Home extends React.Component {
             <div style={{marginTop: 20}}>
               <a href="https://www.wantedly.com/users/87254893" className={styles.link}>Wantedly</a>
               <a href="https://twitter.com/juginon">
-                  <FaTwitter style={{fontSize:20, marginLeft: 20}} className={styles.link}></FaTwitter>
+                  <FaTwitter style={{fontSize: 30, marginLeft: 20}} className={styles.link}></FaTwitter>
               </a>
               <a href="https://www.instagram.com/jun_0gin0/">
                   <FaInstagram style={{fontSize:20, marginLeft:20}} className={styles.link}></FaInstagram>
@@ -230,7 +230,7 @@ export default class Home extends React.Component {
         }></PhonePage>
       </MediaQuery>
       <MediaQuery query="(min-width: 768px">
-      <div className={styles.HomeContainer}>
+      <div className={styles.wholePage}>
         <div className={styles.HomeTop}>
           <div className={styles.NameContainer}>
             <div className={styles.MyName}>
@@ -335,16 +335,16 @@ export default class Home extends React.Component {
               </g>
             </svg>
           </div>
+          <div ref = { ref => {
+                  anime({
+                    targets: ref,
+                    translateY: [-10,-20],
+                    easing: 'easeInOutQuad',
+                    direction: 'alternate',
+                    loop: true
+                  })
+              }} className={styles.ScrollDown}><FiChevronDown/>scroll down</div>
         </div>
-        <div ref = { ref => {
-                anime({
-                  targets: ref,
-                  translateY: [-70,-90],
-                  easing: 'easeInOutQuad',
-                  direction: 'alternate',
-                  loop: true
-                })
-            }} className={styles.ScrollDown}><FiChevronDown/>scroll down</div>
         <DesktopPage layout={"left"} pageName={"About"} imgName={aboutPic} showMoreBtn={true} text={
           <div>
             <p>Welcome to my portfolio!</p>
@@ -367,10 +367,10 @@ export default class Home extends React.Component {
             </div>
             <div style={{marginTop: 20}}>
               <a href="https://twitter.com/juginon">
-                  <FaTwitter style={{fontSize:40}} className={styles.link}></FaTwitter>
+                  <FaTwitter style={{fontSize:"2.5vw"}} className={styles.link}></FaTwitter>
               </a>
               <a href="https://www.instagram.com/jun_0gin0/">
-                  <FaInstagram style={{fontSize:40, marginLeft:30}} className={styles.link}></FaInstagram>
+                  <FaInstagram style={{fontSize:"2.5vw", marginLeft:30}} className={styles.link}></FaInstagram>
               </a>
             </div>
           </div>
