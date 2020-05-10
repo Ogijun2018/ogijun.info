@@ -1,11 +1,22 @@
-.Page {
-    height: 100vh;
-    width: 100vw;
+.wholePage{
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
   }
   
-.innerPage{
-    position: relative;
-    height: 100%;
+.AboutTop {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftContainer {
+    flex: 1;
+}
+
+.rightContainer {
+    flex: 1.618;
 }
 
 .pMyName{
