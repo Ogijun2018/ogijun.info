@@ -3,6 +3,7 @@ import MediaQuery from "react-responsive";
 import { IoIosRemove} from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
+import SkillAtom from "../components/SkillAtom";
 import { ReactComponent as HTML } from '../components/images/html.svg';
 import { ReactComponent as CSS } from '../components/images/css-3.svg';
 import { ReactComponent as Expo } from '../components/images/expo.svg';
@@ -269,133 +270,42 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-        </div>
-        {/* <div className={styles.Page}>
-          <div className={styles.innerPage}>
-            <div style={{position: "relative", paddingLeft: "5%", fontWeight: 500, fontSize: 40}}>
-              <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>
-              Passion
+        <div className={styles.Page}>
+          <div className={styles.Header}>
+            <div className={styles.HeaderLine}>
+              <IoIosRemove></IoIosRemove>
             </div>
-            <div className={styles.box}>
-              <div style={{position: "relative", fontSize: "1.1vw", width: "100%", top: "20%", paddingLeft: 100, paddingRight: 100, justifyContent: "center"}}>
-                <div style={{width: "100%", textAlign: "center", paddingBottom: 60,}}>
-                  <span style={{fontSize: "0.8rem", fontWeight:"bold"}}>- 神は細部に宿る -</span>
-                </div>
-                本当に素晴らしい技術やこだわりは目に見えにくい、またそういった見えないような部分でこそ作品の本質が決まる。この格言は、エンジニアリングにおいても同様であると考えています。
-                ボタン一つ、小さな機能一つにおいても、デザインやインタラクションはユーザに対して影響を及ぼします。完成させるだけでなく、ユーザの視点に立ってどんな機能があったらいいか、また使いたいと思ってもらえるかを常に考えるようにしています。
-              </div>
+            <div>Passion</div>
+          </div>
+          <div className={styles.box}>
+            <div className={styles.QuoteContainer}>
+              <span className={styles.Quote}>- 神は細部に宿る -</span>
+            </div>
+            <div className={styles.sentenceContainer}>
+              本当に素晴らしい技術やこだわりは目に見えにくい、またそういった見えないような部分でこそ作品の本質が決まる。この格言は、エンジニアリングにおいても同様であると考えています。
+              ボタン一つ、小さな機能一つにおいても、デザインやインタラクションはユーザに対して影響を及ぼします。完成させるだけでなく、ユーザの視点に立ってどんな機能があったらいいか、また使いたいと思ってもらえるかを常に考えるようにしています。
             </div>
           </div>
         </div>
         <div className={styles.Page}>
-          <div className={styles.innerPage}>
-            <IoIosRemove style={{position: "absolute", color: "#FFAB00", top: "13%", left: "5%"}}></IoIosRemove>
-            <div style={{position: "absolute", top: "11%", left: "7%", fontWeight: 500, fontSize: 40}}>Skill set</div>
-              <div style={{position: "relative", top: "30%"}}>
-              <div ref = { ref => {
-                anime({
-                    targets: ref,
-                    width: '17.5%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>HTML&CSS</p>
-                  <p className={styles.skillPersent}>70%</p>
-                  <HTML style={{position:"relative", width: "10%", zIndex: 1,}}></HTML>
-                  <CSS style={{position:"relative", width:　"10%", marginLeft: -15}}></CSS>
-                </div>
-              </div>
-              <div style={{position: "relative", top: "30%", left: "40%"}}>
-              <div ref = { ref => {
-                anime({
-                    targets: ref,
-                    width: '20%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>JavaScript</p>
-                  <p className={styles.skillPersent}>80%</p>
-                  <Javascript style={{position:"relative", width:　"30%"}}></Javascript>
-                </div>
-              </div>
-              <div style={{position: "relative", top: "50%"}}>
-              <div ref = { ref => {
-                anime({
-                    targets: ref,
-                    width: '20%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>React/React&nbsp;Native</p>
-                  <p className={styles.skillPersent}>80%</p>
-                  <REACT style={{position:"relative", width: "30%", zIndex: 1}}></REACT>
-                </div>
-              </div>
-              <div style={{position: "relative", top: "50%", left: "40%"}}>
-              <div ref = { ref => {
-                anime({
-                    targets: ref,
-                    width: '12.5%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>Redux/Redux&nbsp;saga</p>
-                  <p className={styles.skillPersent}>50%</p>
-                  <Redux style={{position:"relative", width:　"30%"}}></Redux>
-                </div>
-              </div>
-              <div style={{position: "relative", top: "70%"}}>
-              <div ref = { ref => {
-                anime({
-                    targets: ref,
-                    width: '15%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>Expo</p>
-                  <p className={styles.skillPersent}>60%</p>
-                  <Expo style={{position:"relative", width: "30%", zIndex: 1}}></Expo>
-                </div>
-              </div>
-              <div style={{position: "relative", top: "70%", left: "40%"}}>
-                <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '10%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.skillbarAnimation}>
-                </div>
-                <div className={styles.skillbarWhite}></div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>Python</p>
-                  <p className={styles.skillPersent}>40%</p>
-                  <Python style={{position:"relative", width: "30%", zIndex: 1}}></Python>
-                </div>
-              </div>
-          </div> 
-        </div> */}
+          <div className={styles.Header}>
+            <div className={styles.HeaderLine}>
+              <IoIosRemove></IoIosRemove>
+            </div>
+            <div>Skillset</div>
+          </div>
+          <div className={styles.SkillListContainer}>
+            <ul className={styles.SkillList}>
+              <SkillAtom SkillIcon={<HTML className={styles.Icon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></SkillAtom>
+              <SkillAtom SkillIcon={<Javascript className={styles.Icon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></SkillAtom>
+              <SkillAtom SkillIcon={<REACT className={styles.Icon}></REACT>} SkillName="React/React Native" SkillPersent="80%"></SkillAtom>
+              <SkillAtom SkillIcon={<Redux className={styles.Icon}></Redux>} SkillName="Redux/Redux saga" SkillPersent="50%"></SkillAtom>
+              <SkillAtom SkillIcon={<Expo className={styles.Icon}></Expo>} SkillName="Expo" SkillPersent="60%"></SkillAtom>
+              <SkillAtom SkillIcon={<Python className={styles.Icon}></Python>} SkillName="Python" SkillPersent="40%"></SkillAtom>
+            </ul>
+          </div>
+            </div>
+          </div>
         </MediaQuery>
       </div>
     );

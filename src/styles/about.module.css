@@ -13,6 +13,15 @@
     width: 85%;
 }
 
+.Page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
 .Header {
     display: flex;
     position: absolute;
@@ -107,16 +116,6 @@
     text-align: center;
 }
 
-.skillbarAnimation{
-    position: absolute;
-    left: 20%;
-    margin-top: 2.5vw;
-    background: linear-gradient(to right, #FFAB00, #f83600);
-    height: 20px;
-    border-radius: 50px;
-    z-index: 1;
-}
-
 .pSkillbarAnimation{
     position: absolute;
     top: 13%;
@@ -132,17 +131,6 @@
     top: 13%;
     left: 30%;
     width: 60%;
-    filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.2));
-    height: 20px;
-    border-radius: 50px;
-    background-color: #EFEFEF;
-}
-
-.skillbarWhite{
-    position: absolute;
-    left: 20%;
-    margin-top: 2.5%;
-    width: 25%;
     filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.2));
     height: 20px;
     border-radius: 50px;
@@ -165,22 +153,9 @@
     font-weight: bold;
 }
 
-.skillPersent{
-    position: absolute;
-    font-size: 30px;
-    margin-top: 0px;
-    left: 28vw;
-    font-weight: bold;
-}
-
 .pSkillNameContainer {
     position: absolute;
     top: -20px;
-}
-
-.skillNameContainer {
-    position: absolute;
-    left: 13%;
 }
 
 .pSkillName1 {
@@ -197,20 +172,124 @@
     font-size: 5vw;
 }
 
-.skillName {
-    position: absolute;
-    left: 7vw;
-}
-
 .box {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    height: 50%;
     box-sizing: border-box;
-    height: 500px;
-    left: 25%;
-    top: 10%;
-    overflow: hidden;
-    position: relative;
+    overflow: scroll;
     border-radius: 20px;
     background-color: #EFEFEF;
     filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1));
+    font-size: 1.1vw;
+}
+
+.QuoteContainer {
+    display: flex;
+    flex: 1;
+    padding-top: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Quote {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.sentenceContainer {
+    display: flex;
+    flex: 4;
+    padding-bottom: 4%;
+    box-sizing: border-box;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    align-items: center;
+    font-size: calc(0.1375rem + ((1vw - 1px) * 0.95));
+}
+
+.SkillListContainer {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.SkillList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.SkillContainer {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 15vh;
+    margin: 30px;
+}
+
+.IconContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon {
+    width: 4vw;
+    filter: drop-shadow(1px 4px 7px rgba(0,0,0,0.2));
+}
+
+.SkillbarAnimation{
+    position: absolute;
+    left: 0;
+    top: -6vh;
+    background: linear-gradient(to right, #FFAB00, #f83600);
+    height: 20px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.SkillbarWhite{
+    position: absolute;
+    left: 0;
+    top: -6vh;
+    width: 100%;
+    filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.2));
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+}
+
+.SkillNameAndBarContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.SkillNameContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.SkillName {
+    justify-content: center;
+    display: flex;
+    flex: 2;
+    font-size: calc(0.5375rem + ((1vw - 8px) * 1.25));
+}
+
+.SkillPersent {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    font-weight: 700;
+    font-size: calc(0.5375rem + ((1vw - 8px) * 1.25));
+}
+
+.SkillBarContainer {
+    position: relative;
 }
