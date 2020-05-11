@@ -230,39 +230,42 @@ export default class About extends React.Component {
         <div className={styles.wholePage}>
           <div className={styles.AboutTop}>
             <div className={styles.Header}>
-              <IoIosRemove></IoIosRemove>
+              <div className={styles.HeaderLine}>
+                <IoIosRemove></IoIosRemove>
+              </div>
               <div>About Me</div>
             </div>
             <div className={styles.leftContainer}>
               <div className={styles.MyName}>
                 荻野 隼
+                <div className={styles.MyNameEng}>
+                  Jun Ogino
+                </div>
               </div>
-              <div>
-                Jun Ogino
-              </div>
-              <div>
-                <img src={MyPic} alt=""/>
+              <div className={styles.MyImageContainer}>
+                <div>
+                  <img src={MyPic} alt=""/>
+                </div>
               </div>
             </div>
             <div className={styles.rightContainer}>
-              <div>
+              <div className={styles.rightInnerContainer}>
                 <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
-                  <div>
-                    <FaPencilAlt className={styles.headerLogo}></FaPencilAlt>
-                    Education
-                  </div>
-                  <p>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
-                  <div>
-                    <RiCodeSSlashLine className={styles.headerLogo}></RiCodeSSlashLine>
-                    Programming
-                  </div>
-                  <p>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。</p>
-                  <p>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
-                  <div>
-                    <RiUserHeartLine className={styles.headerLogo}></RiUserHeartLine>
-                    Hobby
-                  </div>
-                  <p>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
+                <div className={styles.MyInfo}>
+                  <FaPencilAlt className={styles.headerLogo}></FaPencilAlt>
+                  Education
+                </div>
+                <p>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
+                <div className={styles.MyInfo}>
+                  <RiCodeSSlashLine className={styles.headerLogo}></RiCodeSSlashLine>
+                  Programming
+                </div>
+                <p>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。<br></br>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
+                <div className={styles.MyInfo}>
+                  <RiUserHeartLine className={styles.headerLogo}></RiUserHeartLine>
+                  Hobby
+                </div>
+                <p>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
               </div>
             </div>
           </div>

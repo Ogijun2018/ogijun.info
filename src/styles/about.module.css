@@ -2,6 +2,7 @@
     height: 300vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
 .AboutTop {
@@ -9,37 +10,80 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    width: 85%;
+}
+
+.Header {
+    display: flex;
+    position: absolute;
+    font-size: 2.0vw;
+    font-weight: 500;
+    flex-direction: row;
+    top: 11%;
+    left: 5%;
+}
+
+.HeaderLine {
+    color: #FFAB00;
 }
 
 .leftContainer {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .rightContainer {
-    flex: 1.618;
+    display: flex;
+    flex: 1;
+    height: 80vh;
+    font-size: calc(0.165rem + ((1vw - 10.4px) * 1.5625));
+    align-items: center;
+    justify-content: center;
+}
+
+.rightInnerContainer {
+    padding-top: 10%;
+    width: 88%;
+}
+
+.MyInfo {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.MyName {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 20vh;
+    padding-left: 1vw;
+}
+
+.MyNameEng {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.MyImageContainer {
+    display: flex;
+    flex: 5;
+    width: 80%;
 }
 
 .pMyName{
-    font-family: heisei-kaku-gothic-std, sans-serif;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
 }
 
-.MyName {
-    font-size: 30px;
-    font-family: "heisei-kaku-gothic-std, sans-serif";
-    font-weight: 600;
-    font-style: normal;
-    position: absolute;
-    top: 23%;
-    left: 8%;
-}
-
 .headerLogo {
     color: #FFAB00;
     padding-bottom: 6px;
-    font-size: 23px;
+    font-size: calc(0.365rem + ((1vw - 10.4px) * 1.5625));
     margin-right: 10px;
 }
 

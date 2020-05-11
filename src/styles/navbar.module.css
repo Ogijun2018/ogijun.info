@@ -1,10 +1,14 @@
 .myNameButton {
-    margin-top: 30px;
-    margin-left: 50px;
+    position: fixed;
+    top: 15px;
+    left: 4%;
+    font-size: 1.2vw;
     cursor: pointer;
     text-decoration: none;
     float: left;
     color: #262626;
+    filter: none;
+    z-index: 21;
 }
 
 .myNameButton:hover {
@@ -15,18 +19,20 @@
 
 .navigationContainer{
     width: 100%;
-    height: 7%;
+    height: calc(20px + 2.5vw);
     position: fixed;
     z-index: 20;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    background-color: rgba(239,239,239,0.6);
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.1));
 }
 
 .newItem{
-    margin-right: 50px;
+    margin-right: 3vw;
     cursor: pointer;
     color: #262626;
     text-decoration: none;
-    float: right;
+    filter: none;
 }
 
 .newItem:hover {
@@ -36,21 +42,23 @@
 }
 
 .listContainer {
+    height: 100%;
     padding-top: 15px;
     list-style: none;
 }
 
-.listItem {
-    align-items: center;
+.listItem{ 
+    /* top: 50%; */
     float: left;
 }
 
 .SNSButton {
     margin-top: -5px;
-    margin-right: 50px;
+    margin-right: 3vw;
     color: #262626;
     width: 30;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
+    filter: none;
 }
 
 .SNSButton:hover {

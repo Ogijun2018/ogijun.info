@@ -81,8 +81,9 @@ class NavigationBar extends React.Component {
                 </div>
             }
             {this.props.responsive === "desktop" &&
+                <React.Fragment>
+                <Link className={styles.myNameButton} to={"/"}>Jun Ogino</Link>
                 <div className={styles.navigationContainer}>
-                    <Link className={styles.myNameButton} to={"/"}>Jun Ogino</Link>
                     <ul className={styles.listContainer}>
                         {/* 右に寄せるためのfloat */}
                         <div style={{float: "right"}}>
@@ -110,6 +111,7 @@ class NavigationBar extends React.Component {
                         </div>
                     </ul>                 
                 </div>
+                </React.Fragment>
             }
         </div>
       );
