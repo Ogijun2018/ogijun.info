@@ -2,6 +2,7 @@
   height: 400vh;
   display: flex;
   flex-direction: column;
+  background-color: #EFEFEF;
 }
 
 .HomeTop {
@@ -10,9 +11,22 @@
   align-items: center;
 }
 
+.pHomeTop {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .NameContainer{
   flex: 1;
   text-align: center;
+}
+
+.pNameContainer {
+  display: flex;
+  flex: 1;
+  line-height: 1.1rem;
+  padding-left: 13%;
 }
 
 .MyName {
@@ -38,12 +52,28 @@
   text-align: center;
 }
 
+.pLogoAnimeContainer {
+  display: flex;
+  flex: 1.618;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
 .LogoAnime {
   fill: none;
-  stroke: #FFAB00;
   stroke-width: 5px;
   padding: 20px;
   width: 75%;
+}
+
+.pLogoAnime {
+  display: flex;
+  fill: none;
+  stroke-width: 5px;
+  width: 75%;
+  padding-top: 30px;
 }
 
 .ScrollDown {
@@ -83,26 +113,22 @@
 .SentenceContainer {
   width: 100%;
   height: 55%;
-  /* height: 40vh; */
   display: flex;
   flex-direction: column;
   padding-left: 13vw;
 }
   
 .pMyName {
-  padding-top: 60vh;
   font-weight: 900;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 1.5rem;
 }
 
 .pJun {
-  margin-bottom: -0.5rem;
+  margin-left: 5px;
 }
 
 .pPosition {
-  margin-top: -1rem;
   font-weight: 700;
   font-size: 0.8rem;
 }

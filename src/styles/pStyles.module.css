@@ -1,57 +1,65 @@
 .Page {
-    background-color: #EFEFEF;
     height: 100vh;
-    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: calc(0.3rem + ((1vw – 4.14px)*1.412));
 }
 
-.innerPage{
-    position: relative;
-    height: 100%;
+.ImageSide {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.ImageContainer {
+    width: 70%;
+}
+
+.SentenceSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SentenceContainer {
+    width: 85%;
+    height: 55%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 20%;
 }
 
 .Headline {
-    position: absolute;
-    font-weight: 700;
-    font-size: 2rem;
-    top: 57%;
-    left: 7%;
+    display: flex;
+    flex: 1;
+    font-weight: 600;
+    font-size: 14vw;
 }
 
 .Line {
-    position: absolute;
-    left: 8%;
-    top: 69%;
+    margin-top: -10px;
     border-top: 2px solid #FFAB00;
-    width: 100px;
+    width: 20vw;
 }
 
 .Paragraph {
-    position: absolute;
-    float: left;
-    top: 70%;
-    left: 7%;
-    z-index: 1;
+    display: flex;
+    flex: 2;
+    line-height: 1;
     margin-top: 10px;
-    line-height: 1vh;
-    font-size: 15px;
-}
-
-.Image {
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 70vw;
-    z-index: 0;
-}
-
-.BtnShowMoreContainer {
-    position: absolute;
-    top: 85%;
-    left: 7%;
-}
+  }
+  
+  .BtnShowMoreContainer {
+    display: flex;
+    flex: 2;
+  }
 
 .btnShowMore {
-    position: absolute;
     display: inline-block;
     width: 100px;
     height:30px;
@@ -106,7 +114,6 @@
 
 .socialAccount{
     color: #262626;
-    font-size: 80;
     margin-right: 40px;
 }
 
