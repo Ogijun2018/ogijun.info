@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    font-size: calc(0.3rem + ((1vw – 4.14px)*1.412));
+    font-size: calc(0.5rem + ((1vw - 4.14px)*1.412));
 }
 
 .ImageSide {
