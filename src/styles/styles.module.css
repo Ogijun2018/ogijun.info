@@ -71,9 +71,11 @@
 .pLogoAnime {
   display: flex;
   fill: none;
-  stroke-width: 5px;
-  width: 75%;
-  padding-top: 30px;
+  stroke-width: 4px;
+  width: 65%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
 }
 
 .ScrollDown {
