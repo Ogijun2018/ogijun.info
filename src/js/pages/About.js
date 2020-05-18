@@ -6,7 +6,6 @@ import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
 import SkillAtom from "../components/SkillAtom";
 import PSkillAtom from "../components/pSkillAtom";
 import { ReactComponent as HTML } from '../components/images/html.svg';
-import { ReactComponent as CSS } from '../components/images/css-3.svg';
 import { ReactComponent as Expo } from '../components/images/expo.svg';
 import { ReactComponent as Javascript } from '../components/images/javascript.svg';
 import { ReactComponent as REACT } from '../components/images/react.svg';
@@ -15,8 +14,6 @@ import { ReactComponent as Python } from '../components/images/python.svg';
 
 import styles from '../../styles/about.module.css';
 import MyPic from '../components/images/about_mypic.jpg';
-
-import anime from "animejs";
 
 export default class About extends React.Component {
   render() {
@@ -111,15 +108,13 @@ export default class About extends React.Component {
               <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
               Skill set
             </div>
-            <div className={styles.SkillListContainer} style={{backgroundColor: "red"}}>
-              <ul className={styles.SkillList}>
-                <PSkillAtom SkillIcon={<HTML className={styles.Icon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></PSkillAtom>
-                <PSkillAtom SkillIcon={<Javascript className={styles.Icon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></PSkillAtom>
-                <PSkillAtom SkillIcon={<REACT className={styles.Icon}></REACT>} SkillName="React/React Native" SkillPersent="80%"></PSkillAtom>
-                <PSkillAtom SkillIcon={<Redux className={styles.Icon}></Redux>} SkillName="Redux/Redux saga" SkillPersent="50%"></PSkillAtom>
-                <PSkillAtom SkillIcon={<Expo className={styles.Icon}></Expo>} SkillName="Expo" SkillPersent="60%"></PSkillAtom>
-                <PSkillAtom SkillIcon={<Python className={styles.Icon}></Python>} SkillName="Python" SkillPersent="40%"></PSkillAtom>
-              </ul>
+            <div className={styles.pSkillList}>
+              <PSkillAtom SkillIcon={<HTML className={styles.pIcon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></PSkillAtom>
+              <PSkillAtom SkillIcon={<Javascript className={styles.pIcon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></PSkillAtom>
+              <PSkillAtom SkillIcon={<REACT className={styles.pIcon}></REACT>} SkillName="React/Native" SkillPersent="80%"></PSkillAtom>
+              <PSkillAtom SkillIcon={<Redux className={styles.pIcon}></Redux>} SkillName="Redux/saga" SkillPersent="50%"></PSkillAtom>
+              <PSkillAtom SkillIcon={<Expo className={styles.pIcon}></Expo>} SkillName="Expo" SkillPersent="60%"></PSkillAtom>
+              <PSkillAtom SkillIcon={<Python className={styles.pIcon}></Python>} SkillName="Python" SkillPersent="40%"></PSkillAtom>
             </div>
           </div>
         </MediaQuery>

@@ -5,16 +5,16 @@ import anime from "animejs";
 export default class SkillAtom extends React.Component {
     render() {
       return(
-        <div className={styles.SkillContainer}>
-            <div className={styles.IconContainer}>
+        <div className={styles.pSkillContainer}>
+            <div className={styles.pIconContainer}>
                 {this.props.SkillIcon}
             </div>
             <div className={styles.SkillNameAndBarContainer}>
                 <div className={styles.SkillNameContainer}>
-                    <div className={styles.SkillName}>
+                    <div className={styles.pSkillName}>
                     <p>{this.props.SkillName}</p>
                     </div>
-                    <div className={styles.SkillPersent}> 
+                    <div className={styles.pSkillPersent}> 
                     <p>{this.props.SkillPersent}</p>
                     </div>
                 </div>

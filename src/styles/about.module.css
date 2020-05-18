@@ -221,6 +221,14 @@
     align-items: center;
 }
 
+.pSkillList {
+    position: relative;
+    top: 15%;
+    padding: 5% 10% 10% 10%;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .SkillContainer {
     display: flex;
     flex-direction: row;
@@ -229,11 +237,31 @@
     margin: 30px;
 }
 
+.pSkillContainer {
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+}
+
 .IconContainer {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
+    background-color: salmon;
+}
+
+.pIconContainer{
+    display: flex;
+    flex: 1.5;
+    margin-left: -3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pIcon {
+    width: 11vw;
+    filter: drop-shadow(1px 4px 7px rgba(0,0,0,0.2));
 }
 
 .Icon {
@@ -282,12 +310,27 @@
     font-size: calc(0.5375rem + ((1vw - 8px) * 1.25));
 }
 
+.pSkillName {
+    justify-content: center;
+    display: flex;
+    flex: 2;
+    font-size: 0.7rem;
+}
+
 .SkillPersent {
     justify-content: center;
     display: flex;
     flex: 1;
     font-weight: 700;
     font-size: calc(0.5375rem + ((1vw - 8px) * 1.25));
+}
+
+.pSkillPersent {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    font-weight: 700;
+    font-size: 0.7rem;
 }
 
 .SkillBarContainer {
