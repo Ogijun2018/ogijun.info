@@ -4,6 +4,7 @@ import { IoIosRemove} from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
 import SkillAtom from "../components/SkillAtom";
+import PSkillAtom from "../components/pSkillAtom";
 import { ReactComponent as HTML } from '../components/images/html.svg';
 import { ReactComponent as CSS } from '../components/images/css-3.svg';
 import { ReactComponent as Expo } from '../components/images/expo.svg';
@@ -110,120 +111,15 @@ export default class About extends React.Component {
               <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
               Skill set
             </div>
-            <div style={{position: "relative", top: "20%"}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '42%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent1}>70%</p>
-              <div className={styles.pSkillNameContainer}>
-                <HTML style={{position:"absolute", left: "8vw", width: "10vw", zIndex: 1}}></HTML>
-                <CSS style={{position:"absolute", left: "15vw", width:　"10vw"}}></CSS>
-                <p className={styles.pSkillName1}>
-                  HTML&CSS
-                </p>
-              </div>
-            </div>
-            <div style={{position: "relative", top: "28%"}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '48%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent1}>80%</p>
-              <div className={styles.pSkillNameContainer}>
-                <Javascript style={{position:"absolute", left: "10vw", width:　"12vw"}}></Javascript>
-                <p className={styles.pSkillName1}>
-                  JavaScript
-                </p>
-              </div>
-            </div>
-            <div style={{position: "relative", top: "36%"}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '48%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent1}>80%</p>
-              <div className={styles.pSkillNameContainer}>
-                <REACT style={{position:"absolute", left: "10vw", width: "13vw"}}></REACT>
-                <p className={styles.pSkillName1}>
-                  React/React Native
-                </p>
-              </div>
-            </div>
-            <div style={{position: "relative", top: "44%"}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '30%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent1}>50%</p>
-              <div className={styles.pSkillNameContainer}>
-                <Redux style={{position:"absolute", left: "10vw", width: "13vw"}}></Redux>
-                <p className={styles.pSkillName1}>
-                  Redux/Redux saga
-                </p>
-              </div>
-            </div>
-            <div style={{position: "relative", top: "52%"}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '36%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent1}>60%</p>
-              <div className={styles.pSkillNameContainer}>
-                <Expo style={{position:"absolute", left: "12vw", width: "13vw"}}></Expo>
-                <p className={styles.pSkillName1}>
-                  Expo
-                </p>
-              </div>
-            </div>
-            <div style={{position: "relative", top: "58%", paddingBottom: 100}}>
-              <div ref = { ref => {
-                  anime({
-                    targets: ref,
-                    width: '24%',
-                    easing: 'easeInOutQuad',
-                    direction: 'normal',
-                  });
-                }} className={styles.pSkillbarAnimation}>
-              </div>
-              <div className={styles.pSkillbarWhite}></div>
-              <p className={styles.pSkillPersent2}>40%</p>
-              <div className={styles.pSkillNameContainer}>
-                <Python style={{position:"absolute", left: "10vw", width: "13vw"}}></Python>
-                <p className={styles.pSkillName2}>
-                  Python
-                </p>
-              </div>
+            <div className={styles.SkillListContainer} style={{backgroundColor: "red"}}>
+              <ul className={styles.SkillList}>
+                <PSkillAtom SkillIcon={<HTML className={styles.Icon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></PSkillAtom>
+                <PSkillAtom SkillIcon={<Javascript className={styles.Icon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></PSkillAtom>
+                <PSkillAtom SkillIcon={<REACT className={styles.Icon}></REACT>} SkillName="React/React Native" SkillPersent="80%"></PSkillAtom>
+                <PSkillAtom SkillIcon={<Redux className={styles.Icon}></Redux>} SkillName="Redux/Redux saga" SkillPersent="50%"></PSkillAtom>
+                <PSkillAtom SkillIcon={<Expo className={styles.Icon}></Expo>} SkillName="Expo" SkillPersent="60%"></PSkillAtom>
+                <PSkillAtom SkillIcon={<Python className={styles.Icon}></Python>} SkillName="Python" SkillPersent="40%"></PSkillAtom>
+              </ul>
             </div>
           </div>
         </MediaQuery>
