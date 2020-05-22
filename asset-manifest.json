@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b8e00e8.chunk.css",
+    "main.css": "/static/css/main.dd0c6f8f.chunk.css",
     "main.js": "/static/js/main.53cbcdd5.chunk.js",
     "main.js.map": "/static/js/main.53cbcdd5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.82a3e4bb.js",
@@ -9,10 +9,10 @@
     "static/js/2.eb385791.chunk.js": "/static/js/2.eb385791.chunk.js",
     "static/js/2.eb385791.chunk.js.map": "/static/js/2.eb385791.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a3fd4c9621c2d0680ea2c245451d2402.js": "/precache-manifest.a3fd4c9621c2d0680ea2c245451d2402.js",
+    "precache-manifest.c03d7303fea5013921b74d26520c2974.js": "/precache-manifest.c03d7303fea5013921b74d26520c2974.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b48abad0.chunk.css.map": "/static/css/2.b48abad0.chunk.css.map",
-    "static/css/main.3b8e00e8.chunk.css.map": "/static/css/main.3b8e00e8.chunk.css.map",
+    "static/css/main.dd0c6f8f.chunk.css.map": "/static/css/main.dd0c6f8f.chunk.css.map",
     "static/js/2.eb385791.chunk.js.LICENSE.txt": "/static/js/2.eb385791.chunk.js.LICENSE.txt",
     "static/media/UECTFlogo_header.png": "/static/media/UECTFlogo_header.4a8be480.png",
     "static/media/UECTFlogo_modal1.png": "/static/media/UECTFlogo_modal1.2a10a799.png",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.82a3e4bb.js",
     "static/css/2.b48abad0.chunk.css",
     "static/js/2.eb385791.chunk.js",
-    "static/css/main.3b8e00e8.chunk.css",
+    "static/css/main.dd0c6f8f.chunk.css",
     "static/js/main.53cbcdd5.chunk.js"
   ]
 }
