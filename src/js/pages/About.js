@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import { IoIosRemove} from "react-icons/io";
+import { IoIosRemove } from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
 import SkillAtom from "../components/SkillAtom";
@@ -11,6 +11,7 @@ import { ReactComponent as Javascript } from '../components/images/javascript.sv
 import { ReactComponent as REACT } from '../components/images/react.svg';
 import { ReactComponent as Redux } from '../components/images/redux.svg';
 import { ReactComponent as Python } from '../components/images/python.svg';
+import { Controller, Scene } from 'react-scrollmagic';
 
 import styles from '../../styles/about.module.css';
 import MyPic from '../components/images/about_mypic.jpg';
@@ -195,8 +196,8 @@ export default class About extends React.Component {
               <SkillAtom SkillIcon={<Python className={styles.Icon}></Python>} SkillName="Python" SkillPersent="40%"></SkillAtom>
             </ul>
           </div>
-            </div>
-          </div>
+        </div>
+      </div>
         </MediaQuery>
       </div>
     );
