@@ -343,9 +343,10 @@ export default class Home extends React.Component {
           </div>
           }></DesktopPage>
         <DesktopPage layout={"right"} pageName={"Works"} imgName={worksPic} showMoreBtn={true} text={
-          <div>
+          <div style={{float: "right"}}>
             <p>Apps, design, research, and more...</p>
-            <p>There are still many immature parts, but I did my best to make it.</p>
+            <p>There are still many immature parts, </p>
+            <p>but I did my best to make it.</p>
           </div>
         }></DesktopPage>
         <DesktopPage layout={"left"} pageName={"Contact"} imgName={contactPic} showMoreBtn={false} text={

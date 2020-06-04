@@ -14,12 +14,12 @@ export default class Page extends React.Component {
                     </div>
                 </div>
                 <div className={styles.SentenceSide}>
-                    <div className={styles.SentenceContainer} style={{paddingLeft: "15vw"}}>
+                    <div className={styles.SentenceContainer}>
                         <div className={styles.Headline}>
                             {this.props.pageName}
                         </div>
                         <div className={styles.Line} style={{marginLeft: "4.5vw"}}></div>
-                        <div className={styles.Paragraph}>
+                        <div className={styles.Paragraph} style={{marginLeft: "-1.5vw", width: "100%"}}>
                             {this.props.text}
                         </div>
                         <div className={styles.btnShowMoreContainer} style={{marginLeft: "9vw"}}>
