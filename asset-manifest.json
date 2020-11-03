@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.dd0c6f8f.chunk.css",
-    "main.js": "/static/js/main.678c3ac2.chunk.js",
-    "main.js.map": "/static/js/main.678c3ac2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.82a3e4bb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.82a3e4bb.js.map",
+    "main.js": "/static/js/main.18714376.chunk.js",
+    "main.js.map": "/static/js/main.18714376.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.120dd051.js",
+    "runtime-main.js.map": "/static/js/runtime-main.120dd051.js.map",
     "static/css/2.b48abad0.chunk.css": "/static/css/2.b48abad0.chunk.css",
-    "static/js/2.eb385791.chunk.js": "/static/js/2.eb385791.chunk.js",
-    "static/js/2.eb385791.chunk.js.map": "/static/js/2.eb385791.chunk.js.map",
+    "static/js/2.538bb80c.chunk.js": "/static/js/2.538bb80c.chunk.js",
+    "static/js/2.538bb80c.chunk.js.map": "/static/js/2.538bb80c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.93ea19800de2c4dfa3d0f45027a442d1.js": "/precache-manifest.93ea19800de2c4dfa3d0f45027a442d1.js",
+    "precache-manifest.d6aa612f3b452ad54e16128a7fe36bb2.js": "/precache-manifest.d6aa612f3b452ad54e16128a7fe36bb2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b48abad0.chunk.css.map": "/static/css/2.b48abad0.chunk.css.map",
     "static/css/main.dd0c6f8f.chunk.css.map": "/static/css/main.dd0c6f8f.chunk.css.map",
-    "static/js/2.eb385791.chunk.js.LICENSE.txt": "/static/js/2.eb385791.chunk.js.LICENSE.txt",
+    "static/js/2.538bb80c.chunk.js.LICENSE.txt": "/static/js/2.538bb80c.chunk.js.LICENSE.txt",
+    "static/media/LabWeb_header.png": "/static/media/LabWeb_header.bfbaf273.png",
+    "static/media/LabWeb_modal2.png": "/static/media/LabWeb_modal2.e694d313.png",
     "static/media/UECTFlogo_header.png": "/static/media/UECTFlogo_header.4a8be480.png",
     "static/media/UECTFlogo_modal1.png": "/static/media/UECTFlogo_modal1.2a10a799.png",
     "static/media/UECTFlogo_modal2.png": "/static/media/UECTFlogo_modal2.f3dbb7c9.png",
@@ -36,15 +38,17 @@
     "static/media/python.51c2eab2.svg": "/static/media/python.51c2eab2.svg",
     "static/media/react.9a28da9f.svg": "/static/media/react.9a28da9f.svg",
     "static/media/redux.85772647.svg": "/static/media/redux.85772647.svg",
+    "static/media/slimline_about.jpg": "/static/media/slimline_about.9bcdf34a.jpg",
+    "static/media/slimline_top.png": "/static/media/slimline_top.f481f23d.png",
     "static/media/stopwatch_header.png": "/static/media/stopwatch_header.e7948665.png",
     "static/media/stopwatch_modal2.jpg": "/static/media/stopwatch_modal2.a87297a9.jpg",
     "static/media/works.png": "/static/media/works.26709bcf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.82a3e4bb.js",
+    "static/js/runtime-main.120dd051.js",
     "static/css/2.b48abad0.chunk.css",
-    "static/js/2.eb385791.chunk.js",
+    "static/js/2.538bb80c.chunk.js",
     "static/css/main.dd0c6f8f.chunk.css",
-    "static/js/main.678c3ac2.chunk.js"
+    "static/js/main.18714376.chunk.js"
   ]
 }
