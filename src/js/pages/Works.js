@@ -9,6 +9,10 @@ import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 import styles from '../../styles/works.module.css';
 import 'rodal/lib/rodal.css';
+import LabWeb_header from '../components/images/LabWeb_header.png';
+import LabWeb_modal2 from '../components/images/LabWeb_modal2.png';
+import slimline_header from '../components/images/slimline_top.png';
+import slimline_modal2 from '../components/images/slimline_about.jpg';
 import portfolio_header from '../components/images/portfolio_header.png';
 import dekita_header from '../components/images/dekita_header.png';
 import stopwatch_header from '../components/images/stopwatch_header.png';
@@ -61,6 +65,13 @@ export default class Works extends React.Component {
   }
 
   render() {
+    const LabWebDescription = "所属している研究室である, 橋山研究室のWebサイトを刷新しました。前まではDrupalというCMSを使っていましたが、今回はRaspberry Pi4とnginx, PHP, Gravの組み合わせで超軽量サーバーを組み立ててみました。githubと連携し、github経由で記事の更新をマージしたら自動的にテストが走り、更新される仕組みを作ったことで簡単なWebサイトの更新が可能になりました。ラズパイを触ったのはほぼ初めてでしたが、いろいろな可能性を感じる体験ができました。";
+    const LabWebSkill = "Raspberry Pi, nginx, deploy bot, github classroom, grav";
+    const LabWebDemoURL = "http://www2.media.is.uec.ac.jp/";
+    const LabWebPic = [LabWeb_header, LabWeb_modal2];
+    const SlimLineDescription = "VOYAGE GROUPのサマーインターンシップ'Treasure'にて作成したWebサービスです。4人チームで企画・設計・開発を行い、開発フェーズではフロントエンドを担当しました。初めてのチーム開発で、バックエンドとの情報の連携の難しさや楽しさ、一つのサービスを作り上げたことの達成感が得られました。インターン内評価ではUI/UX賞, ニーズ賞, グランプリを獲得し、インターンが終わった後も技育展に登壇するため追加開発を行いました。";
+    const SlimLineSkill = "Go, React, Figma";
+    const SlimLinePic = [slimline_header, slimline_modal2];
     const DekitaDescription = "インターンシップを始めて一番最初に作成したアプリケーションです。子供がお手伝いをしたときにこのDEKITA!スタンプを貯めていくことで、子供のお手伝いのモチベーションとなるようなアプリです。React NativeやJavaScriptの基礎を学びながら実際にアプリケーションをリリースできたことは、とてもよい経験になりました。このアプリ作成の経験を基に、現在はさらに複雑な構造のアプリ開発をしています。";
     const DekitaSkill = "React Native, Expo, Xcode, Android Studio, Git";
     const DekitaDemoURL = "https://apps.apple.com/jp/app/dekita-%E3%81%A7%E3%81%8D%E3%81%9F/id1462854067";
@@ -96,6 +107,24 @@ export default class Works extends React.Component {
               </div>
               <div className={styles.pPanel}>
                 <ul className={styles.pWorksList}>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Lab Web", LabWebDescription, LabWebSkill, LabWebDemoURL, LabWebPic)}}>
+                    <figure className={styles.pFigure}>
+                      <img className={styles.image} src={LabWeb_header} alt=""/>
+                    </figure>
+                    <div className={styles.textarea}>
+                      <p className={styles.pName}>Lab Web</p>
+                      <div className={styles.pDate}>Nov 1, 2020</div>
+                    </div>
+                  </div>
+                  <div className={styles.pWorksItem} onClick={() => {this.openModal("SlimLine", SlimLineDescription, SlimLineSkill, "", SlimLinePic)}}>
+                    <figure className={styles.pFigure}>
+                      <img className={styles.image} src={slimline_header} alt=""/>
+                    </figure>
+                    <div className={styles.textarea}>
+                      <p className={styles.pName}>SlimLine</p>
+                      <div className={styles.pDate}>Sep 26, 2020</div>
+                    </div>
+                  </div>
                   <div className={styles.pWorksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL, DekitaPic)}}>
                     <figure className={styles.pFigure}>
                       <img className={styles.image} src={dekita_header} alt=""/>
@@ -169,6 +198,24 @@ export default class Works extends React.Component {
               </div>
               <div className={styles.panel}>
                 <ul className={styles.worksList}>
+                <div className={styles.worksItem} onClick={() => {this.openModal("Lab Web", LabWebDescription, LabWebSkill, LabWebDemoURL, LabWebPic)}}>
+                    <figure className={styles.figure}>
+                      <img className={styles.image} src={LabWeb_header} alt=""/>
+                    </figure>
+                    <div className={styles.textarea}>
+                      <p className={styles.name}>Lab Web</p>
+                      <div className={styles.date}>Nov 1, 2020</div>
+                    </div>
+                  </div>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("SlimLine", SlimLineDescription, SlimLineSkill, "", SlimLinePic)}}>
+                    <figure className={styles.figure}>
+                      <img className={styles.image} src={slimline_header} alt=""/>
+                    </figure>
+                    <div className={styles.textarea}>
+                      <p className={styles.name}>SlimLine</p>
+                      <div className={styles.date}>Sep 26, 2020</div>
+                    </div>
+                  </div>
                   <div className={styles.worksItem} onClick={() => {this.openModal("DEKITA!", DekitaDescription, DekitaSkill, DekitaDemoURL, DekitaPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={dekita_header} alt=""/>

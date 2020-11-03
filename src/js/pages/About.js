@@ -11,7 +11,6 @@ import { ReactComponent as Javascript } from '../components/images/javascript.sv
 import { ReactComponent as REACT } from '../components/images/react.svg';
 import { ReactComponent as Redux } from '../components/images/redux.svg';
 import { ReactComponent as Python } from '../components/images/python.svg';
-import { Controller, Scene } from 'react-scrollmagic';
 
 import styles from '../../styles/about.module.css';
 import MyPic from '../components/images/about_mypic.jpg';
