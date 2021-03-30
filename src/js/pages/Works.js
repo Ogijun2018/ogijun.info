@@ -9,26 +9,24 @@ import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 import styles from '../../styles/works.module.css';
 import 'rodal/lib/rodal.css';
-import LabWeb_header from '../components/images/LabWeb_header.png';
-import LabWeb_modal2 from '../components/images/LabWeb_modal2.png';
-import slimline_header from '../components/images/slimline_top.png';
+import LabWeb_header from '../components/images/LabWeb_header.jpg';
+import LabWeb_modal2 from '../components/images/LabWeb_modal2.jpg';
+import slimline_header from '../components/images/slimline_top.jpg';
 import slimline_modal2 from '../components/images/slimline_about.jpg';
-import portfolio_header from '../components/images/portfolio_header.png';
-import dekita_header from '../components/images/dekita_header.png';
+import portfolio_header from '../components/images/portfolio_header.jpg';
+import dekita_header from '../components/images/dekita_header.jpg';
 import stopwatch_header from '../components/images/stopwatch_header.png';
 import mylogo_header from '../components/images/mylogo_header.png';
-import UECTFlogo_header from '../components/images/UECTFlogo_header.png';
-import graduate_thesis_header from '../components/images/graduate_thesis_header.png';
-import dekita_modal1 from '../components/images/dekita_modal1.png';
+import UECTFlogo_header from '../components/images/UECTFlogo_header.jpg';
+import graduate_thesis_header from '../components/images/graduate_thesis_header.jpg';
+import graduate_thesis_modal1 from '../components/images/graduate_thesis_modal1.jpg';
+import dekita_modal1 from '../components/images/dekita_modal1.jpg';
 import portfolio_modal2 from '../components/images/portfolio_modal2.jpg';
 import portfolio_modal3 from '../components/images/portfolio_modal3.jpg';
 import stopwatch_modal2 from '../components/images/stopwatch_modal2.jpg';
 import mylogo_modal1 from '../components/images/mylogo_modal1.png';
-import UECTFlogo_modal1 from '../components/images/UECTFlogo_modal1.png';
-import UECTFlogo_modal2 from '../components/images/UECTFlogo_modal2.png';
-import graduate_thesis_modal1 from '../components/images/graduate_thesis_modal1.png';
-import graduate_thesis_modal2 from '../components/images/graduate_thesis_modal2.png';
-
+import UECTFlogo_modal1 from '../components/images/UECTFlogo_modal1.jpg';
+import UECTFlogo_modal2 from '../components/images/UECTFlogo_modal2.jpg';
 
 export default class Works extends React.Component {
   state = {
@@ -91,7 +89,7 @@ export default class Works extends React.Component {
     const UECTFPic = [UECTFlogo_modal1, UECTFlogo_modal2];
     const GraduateThesisDescription = "2020年2月に発表した学部生時代の卒業論文です。集中力が低下する時、生体情報が変化することを利用し、休憩時に運動をすることで生体情報の変化を読み取り、運動をした方が集中力があがるという仮定を基に実験をしました。結果は有意ではなかったものの実際に課題の成績の向上がみられました。データ解析にpythonを使用したり、生体情報を取得するためにiPhoneにアプリを作成したりしました。";
     const GraduateThesisSkill = "Python, Swift, latex";
-    const GraduateThesisPic = [graduate_thesis_modal1, graduate_thesis_modal2];
+    const GraduateThesisPic = [graduate_thesis_header, graduate_thesis_modal1];
 
     return (
       <div>

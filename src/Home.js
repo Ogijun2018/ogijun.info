@@ -4,7 +4,7 @@ import PhonePage from "./js/components/PhonePage";
 import styles from "./styles/styles.module.css";
 import MediaQuery from "react-responsive";
 import aboutPic from './js/components/images/about.png';
-import worksPic from './js/components/images/works.png';
+import worksPic from './js/components/images/works.jpg';
 import contactPic from './js/components/images/contact.jpg';
 import { FiChevronDown } from 'react-icons/fi';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
