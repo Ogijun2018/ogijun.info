@@ -196,7 +196,7 @@ export default class Works extends React.Component {
               </div>
               <div className={styles.panel}>
                 <ul className={styles.worksList}>
-                <div className={styles.worksItem} onClick={() => {this.openModal("Lab Web", LabWebDescription, LabWebSkill, LabWebDemoURL, LabWebPic)}}>
+                  <div className={styles.worksItem} onClick={() => {this.openModal("Lab Web", LabWebDescription, LabWebSkill, LabWebDemoURL, LabWebPic)}}>
                     <figure className={styles.figure}>
                       <img className={styles.image} src={LabWeb_header} alt=""/>
                     </figure>

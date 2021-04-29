@@ -66,7 +66,7 @@ export default class About extends React.Component {
                 </tr>
                 <tr>
                   <td>走幅跳</td>
-                  <td>6m82cm</td>
+                  <td>6m91cm</td>
                 </tr>
                 <tr>
                   <td>走高跳</td>
