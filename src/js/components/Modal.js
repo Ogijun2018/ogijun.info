@@ -14,8 +14,10 @@ export default class Page extends React.Component {
           <div className={styles.modalOutSide}>
             <div className={styles.modalContainer}>
               <div className={styles.right}>
-                <div className={styles.title}>{this.props.title}</div>
-                <hr className={styles.bar} color="black"></hr>
+                <div className={styles.title}>
+                  {this.props.title}
+                  <hr className={styles.bar} color="black"></hr>  
+                </div>
                 <div className={styles.subtitle}>
                   <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Description
                 </div>
@@ -36,14 +38,8 @@ export default class Page extends React.Component {
                 </div>
               </div>
               <div className={styles.left}>
-                <div className={styles.cp_cssslider}>
-                  <input type="radio" name="cp_switch" id="photo1" defaultChecked={true}/>
-                  <label htmlFor="photo1"><img src={this.props.pic[0]} alt=""/></label>
-                  <img src={this.props.pic[0]} alt=""/>
-                  <input type="radio" name="cp_switch" id="photo2"/>
-                  <label htmlFor="photo2"><img src={this.props.pic[1]} alt=""/></label>
-                  <img src={this.props.pic[1]} alt=""/>
-                </div>
+                <img className={styles.image} src={this.props.pic[0]} alt=""/>
+                <img className={styles.image} src={this.props.pic[1]} alt=""/>
               </div>
             </div>
           </div>

@@ -16,17 +16,10 @@ import slimline_modal2 from '../components/images/slimline_about.jpg';
 import portfolio_header from '../components/images/portfolio_header.jpg';
 import dekita_header from '../components/images/dekita_header.jpg';
 import stopwatch_header from '../components/images/stopwatch_header.png';
-import mylogo_header from '../components/images/mylogo_header.png';
-import UECTFlogo_header from '../components/images/UECTFlogo_header.jpg';
-import graduate_thesis_header from '../components/images/graduate_thesis_header.jpg';
-import graduate_thesis_modal1 from '../components/images/graduate_thesis_modal1.jpg';
 import dekita_modal1 from '../components/images/dekita_modal1.jpg';
 import portfolio_modal2 from '../components/images/portfolio_modal2.jpg';
 import portfolio_modal3 from '../components/images/portfolio_modal3.jpg';
 import stopwatch_modal2 from '../components/images/stopwatch_modal2.jpg';
-import mylogo_modal1 from '../components/images/mylogo_modal1.png';
-import UECTFlogo_modal1 from '../components/images/UECTFlogo_modal1.jpg';
-import UECTFlogo_modal2 from '../components/images/UECTFlogo_modal2.jpg';
 
 export default class Works extends React.Component {
   state = {
@@ -80,16 +73,6 @@ export default class Works extends React.Component {
     const StopWatchDescription = "所属している陸上競技部にて、マネージャーさんがたくさんのストップウォッチを使い分けるのが難しいという問題を解決するために作ってみたストップウォッチのアプリです。陸上競技に特化した機能として、400mでラップをとることで選択した距離の推定記録を計算して表示します。音量ボタンでスタート/ストップを制御できるとより使いやすいと意見があったので、Swiftを使って一から作り直そうと考えています。";
     const StopWatchSkill = "React Native, Expo, Xcode, moment.js";
     const StopWatchPic = [stopwatch_header, stopwatch_modal2];
-    const MyLogoDescription = "自分のロゴが欲しい！というかねてからの思いを、ついに実現しました。デザインの勉強はまだまだ不足していますが、満足できるデザインになったと思っています。トップ画面のアニメーションはこのロゴのsvgをanime.jsを使って動かしています。";
-    const MyLogoSkill = "Illustrator";
-    const MyLogoPic = [mylogo_modal1, portfolio_header];
-    const UECTFLogoDescription = "所属している電気通信大学陸上競技部、通称UECTFのロゴです。電気通信大学のロゴを踏襲しながらもオリジナルさのある背景にし、一目で電通大とわかるようなロゴにしました。現在は部活のTwitterアイコンやSlackのワークスペースアイコンで使われています。こだわった点として、後ろのグラデーションと球体は黄金比を用いたデザインにしました。";
-    const UECTFSkill = "Illustrator";
-    const UECTFDemoURL = "https://twitter.com/uectf";
-    const UECTFPic = [UECTFlogo_modal1, UECTFlogo_modal2];
-    const GraduateThesisDescription = "2020年2月に発表した学部生時代の卒業論文です。集中力が低下する時、生体情報が変化することを利用し、休憩時に運動をすることで生体情報の変化を読み取り、運動をした方が集中力があがるという仮定を基に実験をしました。結果は有意ではなかったものの実際に課題の成績の向上がみられました。データ解析にpythonを使用したり、生体情報を取得するためにiPhoneにアプリを作成したりしました。";
-    const GraduateThesisSkill = "Python, Swift, latex";
-    const GraduateThesisPic = [graduate_thesis_header, graduate_thesis_modal1];
 
     return (
       <div>
@@ -148,33 +131,6 @@ export default class Works extends React.Component {
                     <div className={styles.textarea}>
                       <p className={styles.pName}>T&F StopWatch</p>
                       <div className={styles.pDate}>May 21, 2019</div>
-                    </div>
-                  </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill, "", MyLogoPic)}}>
-                    <figure className={styles.pFigure}>
-                      <img className={styles.image} src={mylogo_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.pName}>My Logo</p>
-                      <div className={styles.pDate}>Mar 29, 2020</div>
-                    </div>
-                  </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL, UECTFPic)}}>
-                    <figure className={styles.pFigure}>
-                      <img className={styles.image} src={UECTFlogo_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.pName}>UECTF Logo</p>
-                      <div className={styles.pDate}>Mar 29, 2020</div>
-                    </div>
-                  </div>
-                  <div className={styles.pWorksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill, "", GraduateThesisPic)}}>
-                    <figure className={styles.pFigure}>
-                      <img className={styles.image} src={graduate_thesis_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.pName}>Graduate thesis</p>
-                      <div className={styles.pDate}>Feb 14, 2020</div>
                     </div>
                   </div>
                 </ul>
@@ -239,33 +195,6 @@ export default class Works extends React.Component {
                     <div className={styles.textarea}>
                       <p className={styles.name}>T&F StopWatch</p>
                       <div className={styles.date}>May 21, 2019</div>
-                    </div>
-                  </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("My Logo", MyLogoDescription, MyLogoSkill, "", MyLogoPic)}}>
-                    <figure className={styles.figure}>
-                      <img className={styles.image} src={mylogo_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.name}>My Logo</p>
-                      <div className={styles.date}>Mar 29, 2020</div>
-                    </div>
-                  </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("UECTF Logo", UECTFLogoDescription, UECTFSkill, UECTFDemoURL, UECTFPic)}}>
-                    <figure className={styles.figure}>
-                      <img className={styles.image} src={UECTFlogo_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.name}>UECTF Logo</p>
-                      <div className={styles.date}>Mar 29, 2020</div>
-                    </div>
-                  </div>
-                  <div className={styles.worksItem} onClick={() => {this.openModal("Graduate thesis", GraduateThesisDescription, GraduateThesisSkill, "", GraduateThesisPic)}}>
-                    <figure className={styles.figure}>
-                      <img className={styles.image} src={graduate_thesis_header} alt=""/>
-                    </figure>
-                    <div className={styles.textarea}>
-                      <p className={styles.name}>Graduate thesis</p>
-                      <div className={styles.date}>Feb 14, 2020</div>
                     </div>
                   </div>
                 </ul>
