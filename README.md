@@ -2,7 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Jun Ogino's Portfolio
 
-始めかた
 ### yarn start
 localhost:3000に表示される
 
