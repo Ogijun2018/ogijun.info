@@ -56,8 +56,8 @@ export default class Works extends React.Component {
   }
 
   render() {
-    const LabWebDescription = "所属している研究室である, 橋山研究室のWebサイトを刷新しました。前まではDrupalというCMSを使っていましたが、今回はRaspberry Pi4とnginx, PHP, Gravの組み合わせで超軽量サーバーを組み立ててみました。githubと連携し、github経由で記事の更新をマージしたら自動的にテストが走り、更新される仕組みを作ったことで簡単なWebサイトの更新が可能になりました。ラズパイを触ったのはほぼ初めてでしたが、いろいろな可能性を感じる体験ができました。";
-    const LabWebSkill = "Raspberry Pi, nginx, deploy bot, github classroom, grav";
+    const LabWebDescription = "所属研究室である, 橋山研究室のWebサイトを刷新しました。前まではDrupalというCMSを使っていましたが、今回はRaspberry Pi4とnginx, PHP, Gravの組み合わせで超軽量サーバーを組み立ててみました。githubと連携し、githubとgit-ftpを利用することでCLI上で簡単にWebサイトの更新ができるようにしました。ラズパイを触ったのはほぼ初めてでしたが、いろいろな可能性を感じる体験ができました。";
+    const LabWebSkill = "Raspberry Pi, nginx, git-ftp, grav";
     const LabWebDemoURL = "http://www2.media.is.uec.ac.jp/";
     const LabWebPic = [LabWeb_header, LabWeb_modal2];
     const SlimLineDescription = "VOYAGE GROUPのサマーインターンシップ'Treasure'にて作成したWebサービスです。4人チームで企画・設計・開発を行い、開発フェーズではフロントエンドを担当しました。初めてのチーム開発で、バックエンドとの情報の連携の難しさや楽しさ、一つのサービスを作り上げたことの達成感が得られました。インターン内評価ではUI/UX賞, ニーズ賞, グランプリを獲得し、インターンが終わった後も技育展に登壇するため追加開発を行いました。";
