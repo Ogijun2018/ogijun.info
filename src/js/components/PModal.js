@@ -30,7 +30,7 @@ export default class Page extends React.Component {
                 <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Description
               </div>
               <div className={styles.pSentence}>
-                {this.props.description}
+                {this.props.desc}
               </div>
               <div className={styles.pSubtitle}>
                 <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Skill
@@ -42,7 +42,11 @@ export default class Page extends React.Component {
                 <IoIosRemove style={{color: "#FFAB00"}}></IoIosRemove>Demo
               </div>
               <div className={styles.pSentence}>
-                <a style={{color: "#262626"}} href={this.props.demoURL}>{this.props.demoURL}</a>
+                {this.props.url ? 
+                <a style={{color: "#262626"}} href={this.props.url}>{this.props.url}</a>
+                :
+                ""
+                }
               </div>
             </div>
           </div>
