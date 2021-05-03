@@ -211,8 +211,37 @@
 }
 
 .SkillListContainer {
-  width: 90%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
   margin-top: 5%;
+  flex-wrap: wrap;
+}
+
+.SkillInner {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #efefef;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.SkillTheme {
+  display: flex;
+  font-weight: 500;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.Skillname {
+  padding: 20px;
+  font-size: 0.7em;
 }
 
 .SkillList {
@@ -265,8 +294,13 @@
 }
 
 .Icon {
-  width: 4vw;
+  width: 3vw;
+  margin: 0px 10px;
   filter: drop-shadow(1px 4px 7px rgba(0, 0, 0, 0.2));
+}
+
+.Theme {
+  /* margin: 10px; */
 }
 
 .SkillbarAnimation {
@@ -321,7 +355,7 @@
   justify-content: center;
   display: flex;
   flex: 1;
-  font-weight: 700;
+  font-weight: 300;
   font-size: calc(0.5375rem + ((1vw - 8px) * 1.25));
 }
 

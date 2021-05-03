@@ -15,7 +15,7 @@ export default class SkillAtom extends React.Component {
                     <p>{this.props.SkillName}</p>
                     </div>
                     <div className={styles.SkillPersent}> 
-                    <p>{this.props.SkillPersent}</p>
+                    <p>{this.props.years}</p>
                     </div>
                 </div>
                 <div className={styles.SkillBarContainer}>

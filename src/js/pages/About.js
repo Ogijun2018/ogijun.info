@@ -11,6 +11,9 @@ import { ReactComponent as Javascript } from '../components/images/javascript.sv
 import { ReactComponent as REACT } from '../components/images/react.svg';
 import { ReactComponent as Redux } from '../components/images/redux.svg';
 import { ReactComponent as Python } from '../components/images/python.svg';
+import { ReactComponent as Swift } from '../components/images/swift.svg';
+import { ReactComponent as Ruby } from '../components/images/ruby.svg';
+import { ReactComponent as Illustrator } from '../components/images/illustrator.svg';
 
 import styles from '../../styles/about.module.css';
 import MyPic from '../components/images/about_mypic.jpg';
@@ -186,14 +189,43 @@ export default class About extends React.Component {
             <div>Skillset</div>
           </div>
           <div className={styles.SkillListContainer}>
-            <ul className={styles.SkillList}>
-              <SkillAtom SkillIcon={<HTML className={styles.Icon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></SkillAtom>
-              <SkillAtom SkillIcon={<Javascript className={styles.Icon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></SkillAtom>
-              <SkillAtom SkillIcon={<REACT className={styles.Icon}></REACT>} SkillName="React/React Native" SkillPersent="80%"></SkillAtom>
-              <SkillAtom SkillIcon={<Redux className={styles.Icon}></Redux>} SkillName="Redux/Redux saga" SkillPersent="50%"></SkillAtom>
-              <SkillAtom SkillIcon={<Expo className={styles.Icon}></Expo>} SkillName="Expo" SkillPersent="60%"></SkillAtom>
-              <SkillAtom SkillIcon={<Python className={styles.Icon}></Python>} SkillName="Python" SkillPersent="40%"></SkillAtom>
-            </ul>
+            <div className={styles.SkillInner}>
+              <div className={styles.SkillTheme}>
+                <REACT className={styles.Icon}></REACT>
+                <p>Front-end</p>
+              </div>
+              <div className={styles.Skillname}>
+                HTML5 / CSS3 / jQuery / React / Redux / Redux Saga / Vue / Webpack
+              </div>
+            </div>
+            <div className={styles.SkillInner}>
+              <div className={styles.SkillTheme}>
+                <Ruby className={styles.Icon}></Ruby>
+                <p className={styles.Theme}>Back-end</p>
+              </div>
+              <div className={styles.Skillname}>
+                Ruby / Ruby on Rails / python
+              </div>
+            </div>
+            <div style={{width: "100%"}}></div>
+            <div className={styles.SkillInner}>
+              <div className={styles.SkillTheme}>
+                <Swift className={styles.Icon}></Swift>
+                <p>Mobile</p>
+              </div>
+              <div className={styles.Skillname}>
+                React Native / Expo / Swift
+              </div>
+            </div>
+            <div className={styles.SkillInner}>
+              <div className={styles.SkillTheme}>
+                <Illustrator className={styles.Icon}></Illustrator>
+                <p>Design</p>
+              </div>
+              <div className={styles.Skillname}>
+                figma / Illustrator / Photoshop
+              </div>
+            </div>
           </div>
         </div>
       </div>
