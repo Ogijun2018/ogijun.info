@@ -5,7 +5,6 @@ import { IoIosRemove } from "react-icons/io";
 import Modal from "../components/Modal";
 import PModal from "../components/PModal";
 import Rodal from 'rodal';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 import styles from '../../styles/works.module.css';
 import 'rodal/lib/rodal.css';
@@ -98,7 +97,6 @@ export default class Works extends React.Component {
 
     return (
       <div>
-      {/* <ScrollToTopOnMount/> */}
       <link rel="stylesheet" href="https://use.typekit.net/urt8xoe.css"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">
