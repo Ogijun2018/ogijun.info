@@ -98,7 +98,7 @@ export default class Works extends React.Component {
 
     return (
       <div>
-      <ScrollToTopOnMount/>
+      {/* <ScrollToTopOnMount/> */}
       <link rel="stylesheet" href="https://use.typekit.net/urt8xoe.css"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></link>
       <MediaQuery query="(max-width:767px)">
