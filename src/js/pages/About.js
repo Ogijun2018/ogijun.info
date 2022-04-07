@@ -3,14 +3,7 @@ import MediaQuery from "react-responsive";
 import { IoIosRemove } from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
-// import SkillAtom from "../components/SkillAtom";
-import PSkillAtom from "../components/pSkillAtom";
-import { ReactComponent as HTML } from '../components/images/html.svg';
-import { ReactComponent as Expo } from '../components/images/expo.svg';
-import { ReactComponent as Javascript } from '../components/images/javascript.svg';
 import { ReactComponent as REACT } from '../components/images/react.svg';
-import { ReactComponent as Redux } from '../components/images/redux.svg';
-import { ReactComponent as Python } from '../components/images/python.svg';
 import { ReactComponent as Swift } from '../components/images/swift.svg';
 import { ReactComponent as Ruby } from '../components/images/ruby.svg';
 import { ReactComponent as Illustrator } from '../components/images/illustrator.svg';
@@ -46,30 +39,46 @@ export default class About extends React.Component {
               <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
               <div style={{fontSize: 20, marginTop: -10}}>
                 <FaPencilAlt className={styles.headerLogo1}></FaPencilAlt>
-                Education
+                Career
               </div>
-              <p style={{marginTop:5}}>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
+              <p style={{marginTop:5}}>
+                2016/03 都立武蔵野北高校(普通科)を卒業。
+                <br></br>
+                2016/04 電気通信大学 情報理工学域 I類 メディア情報学プログラムに入学。
+                <br></br>
+                2020/04 電気通信大学を卒業し、同大学院 情報理工学研究科 情報学専攻に入学。
+                <br></br>
+                2022/04 電気通信大学大学院を修了し、株式会社ZOZOに新卒入社。
+              </p>
               <div style={{fontSize: 20}}>
                 <RiCodeSSlashLine className={styles.headerLogo2}></RiCodeSSlashLine>
                 Programming
               </div>
-              <p style={{marginTop:5}}>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。</p>
-              <p>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
+              <p style={{marginTop:5}}>
+                大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。
+                <br></br>
+                B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、
+                React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。
+              </p>
               <div style={{fontSize: 20}}>
                 <RiUserHeartLine className={styles.headerLogo2}></RiUserHeartLine>
                 Hobby
               </div>
-              <p style={{marginTop: 5}}>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
+              <p style={{marginTop: 5}}>
+                大学の陸上競技部に所属し、現在も選手として活動中。
+                <br></br>
+                2018年 第97回関東陸上競技大会 男子2部 十種競技 第6位入賞。
+              </p>
               <p style={{fontSize: 18}}>Personal Best</p>
               <table className={styles.table}>
                 <tbody>
                 <tr>
                   <td>100m</td>
-                  <td>11"42</td>
+                  <td>11"36</td>
                 </tr>
                 <tr>
                   <td>走幅跳</td>
-                  <td>6m91cm</td>
+                  <td>7m14cm</td>
                 </tr>
                 <tr>
                   <td>走高跳</td>
@@ -77,11 +86,11 @@ export default class About extends React.Component {
                 </tr>
                 <tr>
                   <td>400m</td>
-                  <td>50.82</td>
+                  <td>50.49</td>
                 </tr>
                 <tr>
                   <td>110mH</td>
-                  <td>15"51</td>
+                  <td>15"38</td>
                 </tr>
                 <tr>
                   <td>1500m</td>
@@ -89,7 +98,7 @@ export default class About extends React.Component {
                 </tr>
                 <tr>
                   <td>十種競技</td>
-                  <td>6008点</td>
+                  <td>6121点</td>
                 </tr>
                 </tbody>
               </table>
@@ -112,12 +121,44 @@ export default class About extends React.Component {
               Skill set
             </div>
             <div className={styles.pSkillList}>
-              <PSkillAtom SkillIcon={<HTML className={styles.pIcon}></HTML>} SkillName="HTML&CSS" SkillPersent="70%"></PSkillAtom>
-              <PSkillAtom SkillIcon={<Javascript className={styles.pIcon}></Javascript>} SkillName="JavaScript" SkillPersent="80%"></PSkillAtom>
-              <PSkillAtom SkillIcon={<REACT className={styles.pIcon}></REACT>} SkillName="React/Native" SkillPersent="80%"></PSkillAtom>
-              <PSkillAtom SkillIcon={<Redux className={styles.pIcon}></Redux>} SkillName="Redux/saga" SkillPersent="50%"></PSkillAtom>
-              <PSkillAtom SkillIcon={<Expo className={styles.pIcon}></Expo>} SkillName="Expo" SkillPersent="60%"></PSkillAtom>
-              <PSkillAtom SkillIcon={<Python className={styles.pIcon}></Python>} SkillName="Python" SkillPersent="40%"></PSkillAtom>
+              <div className={styles.pSkillListContainer}>
+                <div className={styles.pSkillInner}>
+                  <div className={styles.pSkillTheme}>
+                    <REACT className={styles.pIcon} />
+                    Front End
+                  </div>
+                  <div className={styles.pSkillname}>
+                    HTML / CSS / jQuery / React / Redux / Redux Saga / Vue / Webpack
+                  </div>
+                </div>
+                <div className={styles.pSkillInner}>
+                  <div className={styles.pSkillTheme}>
+                    <Ruby className={styles.pIcon} />
+                    Back End
+                  </div>
+                  <div className={styles.pSkillname}>
+                    Ruby / Ruby on Rails / Python
+                  </div>
+                </div>
+                <div className={styles.pSkillInner}>
+                  <div className={styles.pSkillTheme}>
+                    <Swift className={styles.pIcon} />
+                    Mobile
+                  </div>
+                  <div className={styles.pSkillname}>
+                    React Native / Expo / Swift
+                  </div>
+                </div>
+                <div className={styles.pSkillInner}>
+                  <div className={styles.pSkillTheme}>
+                    <Illustrator className={styles.pIcon} />
+                    Design
+                  </div>
+                  <div className={styles.pSkillname}>
+                    figma / Illustrator / Photoshop / Blender
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </MediaQuery>
