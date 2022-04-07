@@ -3,7 +3,7 @@ import MediaQuery from "react-responsive";
 import { IoIosRemove } from "react-icons/io";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiCodeSSlashLine, RiUserHeartLine } from "react-icons/ri";
-import SkillAtom from "../components/SkillAtom";
+// import SkillAtom from "../components/SkillAtom";
 import PSkillAtom from "../components/pSkillAtom";
 import { ReactComponent as HTML } from '../components/images/html.svg';
 import { ReactComponent as Expo } from '../components/images/expo.svg';

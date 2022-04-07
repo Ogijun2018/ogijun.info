@@ -5,9 +5,6 @@ import Home from "./Home";
 import About from "./js/pages/About";
 import Works from "./js/pages/Works";
 import MediaQuery from "react-responsive";
-
-import {returnTop} from './js/components/ScrollToTopOnMount';
-
 import NavigationBar from "./js/NavBar";
 
 function App() {
