@@ -20,7 +20,7 @@ export default class About extends React.Component {
       <MediaQuery query="(max-width:767px)">
           <div style={{position:"absolute", height: "180%", width: "100%"}}>
             <div style={{position: "relative", top: "7%", paddingLeft: "4%"}}>
-              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
+              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}} />
               About Me
             </div> 
             <div style={{position: "relative", top: "9%", paddingLeft: "14%"}}>
@@ -38,7 +38,7 @@ export default class About extends React.Component {
             <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "12%", left:"10%"}}>
               <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
               <div style={{fontSize: 20, marginTop: -10}}>
-                <FaPencilAlt className={styles.headerLogo1}></FaPencilAlt>
+                <FaPencilAlt className={styles.headerLogo1} />
                 Career
               </div>
               <p style={{marginTop:5}}>
@@ -51,7 +51,7 @@ export default class About extends React.Component {
                 2022/04 電気通信大学大学院を修了し、株式会社ZOZOに新卒入社。
               </p>
               <div style={{fontSize: 20}}>
-                <RiCodeSSlashLine className={styles.headerLogo2}></RiCodeSSlashLine>
+                <RiCodeSSlashLine className={styles.headerLogo2} />
                 Programming
               </div>
               <p style={{marginTop:5}}>
@@ -61,7 +61,7 @@ export default class About extends React.Component {
                 React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。
               </p>
               <div style={{fontSize: 20}}>
-                <RiUserHeartLine className={styles.headerLogo2}></RiUserHeartLine>
+                <RiUserHeartLine className={styles.headerLogo2} />
                 Hobby
               </div>
               <p style={{marginTop: 5}}>
@@ -105,7 +105,7 @@ export default class About extends React.Component {
             </div>
 
             <div style={{position: "relative", top: "14%", paddingLeft: "5%"}}>
-              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
+              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}} />
               Passion
             </div>
             <div style={{position: "relative", fontSize: "0.5rem", width: "80%", top: "14%", left:"10%"}}>
@@ -117,7 +117,7 @@ export default class About extends React.Component {
             </div>
             
             <div style={{position: "relative", top: "16%", paddingLeft: "5%"}}>
-              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}}></IoIosRemove>
+              <IoIosRemove style={{color: "#FFAB00", marginBottom: "3%"}} />
               Skill set
             </div>
             <div className={styles.pSkillList}>
@@ -167,7 +167,7 @@ export default class About extends React.Component {
           <div className={styles.AboutTop}>
             <div className={styles.Header}>
               <div className={styles.HeaderLine}>
-                <IoIosRemove></IoIosRemove>
+                <IoIosRemove />
               </div>
               <div>About Me</div>
             </div>
@@ -188,17 +188,25 @@ export default class About extends React.Component {
               <div className={styles.rightInnerContainer}>
                 <p>1998年1月26日生まれ、東京都出身。趣味は体を動かすこと。</p>
                 <div className={styles.MyInfo}>
-                  <FaPencilAlt className={styles.headerLogo}></FaPencilAlt>
-                  Education
+                  <FaPencilAlt className={styles.headerLogo} />
+                  Career
                 </div>
-                <p>都立武蔵野北高校(普通科)を卒業後、電気通信大学 情報理工学域に進学。B2からI類(情報系)に所属し、B3からメディア情報学プログラムに所属。2020年3月に卒業し、同年4月、大学院に進学。<br></br>卒業研究テーマは "休憩時の運動が集中力に与える影響" 。</p>
+                <p style={{marginTop:15}}>
+                  2016/03 都立武蔵野北高校(普通科)を卒業。
+                  <br></br>
+                  2016/04 電気通信大学 情報理工学域 I類 メディア情報学プログラムに入学。
+                  <br></br>
+                  2020/04 電気通信大学を卒業し、同大学院 情報理工学研究科 情報学専攻に入学。
+                  <br></br>
+                  2022/04 電気通信大学大学院を修了し、株式会社ZOZOに新卒入社。
+                </p>
                 <div className={styles.MyInfo}>
-                  <RiCodeSSlashLine className={styles.headerLogo}></RiCodeSSlashLine>
+                  <RiCodeSSlashLine className={styles.headerLogo} />
                   Programming
                 </div>
                 <p>大学入学後、学習の一環でC, Java, JavaScript, pythonなどを学ぶ。<br></br>B3の冬、スキル不足を感じインターンシップを開始。JavaScriptの基礎を実務を通して学び、React Nativeを用いたネイティブアプリ開発、AR.jsを用いたARコンテンツの作成協力などに携わる。</p>
                 <div className={styles.MyInfo}>
-                  <RiUserHeartLine className={styles.headerLogo}></RiUserHeartLine>
+                  <RiUserHeartLine className={styles.headerLogo} />
                   Hobby
                 </div>
                 <p>大学の陸上競技部に所属し、現在も選手として活動中。<br></br>2018年 第97回関東陸上競技大会<br></br>男子2部 十種競技 第6位入賞。</p>
@@ -208,7 +216,7 @@ export default class About extends React.Component {
         <div className={styles.Page}>
           <div className={styles.Header}>
             <div className={styles.HeaderLine}>
-              <IoIosRemove></IoIosRemove>
+              <IoIosRemove />
             </div>
             <div>Passion</div>
           </div>
@@ -225,15 +233,15 @@ export default class About extends React.Component {
         <div className={styles.Page}>
           <div className={styles.Header}>
             <div className={styles.HeaderLine}>
-              <IoIosRemove></IoIosRemove>
+              <IoIosRemove />
             </div>
             <div>Skillset</div>
           </div>
           <div className={styles.SkillListContainer}>
             <div className={styles.SkillInner}>
               <div className={styles.SkillTheme}>
-                <REACT className={styles.Icon}></REACT>
-                <p>Front-end</p>
+                <REACT className={styles.Icon} />
+                <p>Front End</p>
               </div>
               <div className={styles.Skillname}>
                 HTML5 / CSS3 / jQuery / React / Redux / Redux Saga / Vue / Webpack
@@ -241,8 +249,8 @@ export default class About extends React.Component {
             </div>
             <div className={styles.SkillInner}>
               <div className={styles.SkillTheme}>
-                <Ruby className={styles.Icon}></Ruby>
-                <p className={styles.Theme}>Back-end</p>
+                <Ruby className={styles.Icon} />
+                <p className={styles.Theme}>Back End</p>
               </div>
               <div className={styles.Skillname}>
                 Ruby / Ruby on Rails / python
@@ -251,7 +259,7 @@ export default class About extends React.Component {
             <div style={{width: "100%"}}></div>
             <div className={styles.SkillInner}>
               <div className={styles.SkillTheme}>
-                <Swift className={styles.Icon}></Swift>
+                <Swift className={styles.Icon} />
                 <p>Mobile</p>
               </div>
               <div className={styles.Skillname}>
@@ -260,7 +268,7 @@ export default class About extends React.Component {
             </div>
             <div className={styles.SkillInner}>
               <div className={styles.SkillTheme}>
-                <Illustrator className={styles.Icon}></Illustrator>
+                <Illustrator className={styles.Icon} />
                 <p>Design</p>
               </div>
               <div className={styles.Skillname}>
@@ -270,7 +278,7 @@ export default class About extends React.Component {
           </div>
         </div>
       </div>
-        </MediaQuery>
+      </MediaQuery>
       </div>
     );
   }
