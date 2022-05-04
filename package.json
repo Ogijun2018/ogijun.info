@@ -5,8 +5,8 @@
   "dependencies": {
     "@animated-burgers/burger-squeeze": "^1.1.2",
     "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.8",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^14.0.4",
     "animate.css": "^4.1.1",
     "animejs": "^3.2.1",
     "classnames": "^2.3.1",
@@ -15,9 +15,9 @@
     "react-genie": "^0.2.2",
     "react-icons": "^4.2.0",
     "react-pose": "^4.0.10",
-    "react-responsive": "^8.2.0",
+    "react-responsive": "^9.0.0-beta.6",
     "react-router-scroll": "^0.4.4",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.0",
     "react-scroll": "^1.8.2",
     "react-scrollmagic": "^2.3.0",
     "react-spring": "^9.1.2",
@@ -51,18 +51,21 @@
     ]
   },
   "devDependencies": {
-    "css-loader": "^5.2.4",
+    "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^3.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "style-loader": "^2.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "style-loader": "^3.3.1",
     "url-loader": "^4.1.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Ogijun2018/portfolio_react"
+  },
+  "resolutions": {
+    "nth-check": "^2.0.1"
   }
 }
